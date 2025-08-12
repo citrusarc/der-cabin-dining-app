@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { menu } from "@/data/menu";
 
 export default function ChildHomePage() {
   return (
@@ -12,10 +13,17 @@ export default function ChildHomePage() {
         />
         <div className="flex flex-col">
           <h1 className="text-2xl font-semibold">Der&apos; Cabin Bistro</h1>
-          <p className="text-lg text-yellow-500">Comfort food, cozy moments</p>
+          <p className="text-lg font-medium text-yellow-500">
+            Comfort food, cozy moments
+          </p>
         </div>
       </div>
-      <div>Filter</div>
+      <div className="flex gap-4 text-lg font-medium overflow-x-auto whitespace-nowrap scrollbar-hide">
+        {[...new Set(menu.map((item) => item.category))].map((category) => (
+          <div key={category}>{category}</div>
+        ))}
+      </div>
+      <div>Card</div>
     </div>
   );
 }
