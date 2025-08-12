@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function ChildHomePage() {
   return (
-    <div className="flex flex-col gap-8 p-4">
-      <div className="flex flex-row p-6 gap-6 w-full items-center  rounded-2xl bg-zinc-900">
+    <div className="flex flex-col gap-4 p-4">
+      <div className="flex flex-row px-6 py-8 gap-6 w-full items-center  rounded-2xl bg-zinc-800">
         <Image
           src="/Images/brand-logo.png"
           alt="Brand Logo"
