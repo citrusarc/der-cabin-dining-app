@@ -22,4 +22,5 @@ export interface MenuItem {
   description?: string;
   category: MenuCategory;
   price: MenuPrice;
+  isDiscount: boolean;
 }

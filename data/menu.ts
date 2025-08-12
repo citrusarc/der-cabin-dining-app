@@ -8,7 +8,8 @@ export const menu: MenuItem[] = [
     image: "/Images/SEAFOOD AGLIO E OLIO PASTA.jpg",
     description: "Pasta with fresh seafood in garlic and olive oil sauce.",
     category: "Pasta Parade",
-    price: { current: 22.9, original: 22.9, currency: "MYR" },
+    price: { current: 22.9, original: 22.9, currency: "RM" },
+    isDiscount: true,
   },
   {
     id: "pasta-parade-2",
@@ -16,7 +17,8 @@ export const menu: MenuItem[] = [
     image: "/Images/SALTED EGG SEAFOOD PASTA.jpg",
     description: "Creamy salted egg sauce with assorted seafood.",
     category: "Pasta Parade",
-    price: { current: 24.9, original: 24.9, currency: "MYR" },
+    price: { current: 24.9, original: 24.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "pasta-parade-3",
@@ -24,7 +26,8 @@ export const menu: MenuItem[] = [
     image: "/Images/SALTED EGG CHICKEN PASTA.jpg",
     description: "Tender chicken tossed in salted egg cream sauce.",
     category: "Pasta Parade",
-    price: { current: 21.9, original: 21.9, currency: "MYR" },
+    price: { current: 21.9, original: 21.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "pasta-parade-4",
@@ -32,7 +35,8 @@ export const menu: MenuItem[] = [
     image: "/Images/MEATBALLS PASTA.jpg",
     description: "Spaghetti with juicy beef meatballs and tomato sauce.",
     category: "Pasta Parade",
-    price: { current: 20.9, original: 20.9, currency: "MYR" },
+    price: { current: 20.9, original: 20.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "pasta-parade-5",
@@ -40,7 +44,8 @@ export const menu: MenuItem[] = [
     image: "/Images/KID'S CARBONARA PASTA.jpg",
     description: "Creamy carbonara pasta made kid-friendly.",
     category: "Pasta Parade",
-    price: { current: 18.9, original: 18.9, currency: "MYR" },
+    price: { current: 18.9, original: 18.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "pasta-parade-6",
@@ -48,7 +53,8 @@ export const menu: MenuItem[] = [
     image: "/Images/CHILLI, GARLIC & SHRIMP PASTA.jpg",
     description: "Spicy pasta with garlic, chilli, and fresh shrimp.",
     category: "Pasta Parade",
-    price: { current: 23.9, original: 23.9, currency: "MYR" },
+    price: { current: 23.9, original: 23.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "pasta-parade-7",
@@ -56,7 +62,8 @@ export const menu: MenuItem[] = [
     image: "/Images/CHICKEN ALFREDO PASTA.jpg",
     description: "Creamy alfredo sauce with grilled chicken slices.",
     category: "Pasta Parade",
-    price: { current: 21.9, original: 21.9, currency: "MYR" },
+    price: { current: 21.9, original: 21.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "pasta-parade-8",
@@ -64,7 +71,8 @@ export const menu: MenuItem[] = [
     image: "/Images/CHICKEN AGLIO E OLIO PASTA.jpg",
     description: "Garlic and olive oil pasta topped with grilled chicken.",
     category: "Pasta Parade",
-    price: { current: 20.9, original: 20.9, currency: "MYR" },
+    price: { current: 20.9, original: 20.9, currency: "RM" },
+    isDiscount: false,
   },
 
   // Chicken Corner
@@ -74,7 +82,8 @@ export const menu: MenuItem[] = [
     image: "/Images/SALTED EGG CHICKEN.jpg",
     description: "Crispy chicken with creamy salted egg sauce.",
     category: "Chicken Corner",
-    price: { current: 19.9, original: 19.9, currency: "MYR" },
+    price: { current: 19.9, original: 19.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "chicken-corner-2",
@@ -82,7 +91,8 @@ export const menu: MenuItem[] = [
     image: "/Images/CABIN CHICKEN CHOP.jpg",
     description: "Grilled chicken chop with sides and sauce.",
     category: "Chicken Corner",
-    price: { current: 20.9, original: 20.9, currency: "MYR" },
+    price: { current: 20.9, original: 20.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "chicken-corner-3",
@@ -90,7 +100,8 @@ export const menu: MenuItem[] = [
     image: "/Images/BUFFALO CHICKEN WING.jpg",
     description: "Spicy buffalo wings served with dipping sauce.",
     category: "Chicken Corner",
-    price: { current: 18.9, original: 18.9, currency: "MYR" },
+    price: { current: 18.9, original: 18.9, currency: "RM" },
+    isDiscount: false,
   },
 
   // Grill & Steak
@@ -100,7 +111,8 @@ export const menu: MenuItem[] = [
     image: "/Images/LAMB SHOULDER.jpg",
     description: "Juicy grilled lamb shoulder with sides.",
     category: "Grill & Steak",
-    price: { current: 35.9, original: 35.9, currency: "MYR" },
+    price: { current: 35.9, original: 35.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "grill-steak-2",
@@ -108,7 +120,8 @@ export const menu: MenuItem[] = [
     image: "/Images/DER CABIN BEEF STEAK.jpg",
     description: "Tender beef steak cooked to perfection.",
     category: "Grill & Steak",
-    price: { current: 38.9, original: 38.9, currency: "MYR" },
+    price: { current: 38.9, original: 38.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "grill-steak-3",
@@ -116,7 +129,8 @@ export const menu: MenuItem[] = [
     image: "/Images/GRILLED CHICKEN CHOP.jpg",
     description: "Succulent grilled chicken chop with sauce.",
     category: "Grill & Steak",
-    price: { current: 20.9, original: 20.9, currency: "MYR" },
+    price: { current: 20.9, original: 20.9, currency: "RM" },
+    isDiscount: false,
   },
 
   // From the Sea
@@ -126,7 +140,8 @@ export const menu: MenuItem[] = [
     image: "/Images/GRILLED SALMON.jpg",
     description: "Fresh salmon grilled to perfection.",
     category: "From the Sea",
-    price: { current: 32.9, original: 32.9, currency: "MYR" },
+    price: { current: 32.9, original: 32.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "from-the-sea-2",
@@ -134,7 +149,8 @@ export const menu: MenuItem[] = [
     image: "/Images/FISH & CHIPS.jpg",
     description: "Crispy fried fish served with fries.",
     category: "From the Sea",
-    price: { current: 20.9, original: 20.9, currency: "MYR" },
+    price: { current: 20.9, original: 20.9, currency: "RM" },
+    isDiscount: false,
   },
 
   // Burger Bliss
@@ -144,7 +160,8 @@ export const menu: MenuItem[] = [
     image: "/Images/DER' CABIN CHEESE BEEF BURGER.jpg",
     description: "Beef burger with cheese and special sauce.",
     category: "Burger Bliss",
-    price: { current: 18.9, original: 18.9, currency: "MYR" },
+    price: { current: 18.9, original: 18.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "burger-bliss-2",
@@ -152,7 +169,8 @@ export const menu: MenuItem[] = [
     image: "/Images/DER' CABIN BEEF BURGER.jpg",
     description: "Classic beef burger with fresh toppings.",
     category: "Burger Bliss",
-    price: { current: 17.9, original: 17.9, currency: "MYR" },
+    price: { current: 17.9, original: 17.9, currency: "RM" },
+    isDiscount: false,
   },
 
   // Sides & Snacks
@@ -162,7 +180,8 @@ export const menu: MenuItem[] = [
     image: "/Images/ONION RING.jpg",
     description: "Crispy golden onion rings.",
     category: "Sides & Snacks",
-    price: { current: 8.9, original: 8.9, currency: "MYR" },
+    price: { current: 8.9, original: 8.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "sides-snacks-2",
@@ -170,7 +189,8 @@ export const menu: MenuItem[] = [
     image: "/Images/NACHOS WITH BEEF CON CARNE.jpg",
     description: "Nachos topped with beef con carne and cheese.",
     category: "Sides & Snacks",
-    price: { current: 14.9, original: 14.9, currency: "MYR" },
+    price: { current: 14.9, original: 14.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "sides-snacks-3",
@@ -178,7 +198,8 @@ export const menu: MenuItem[] = [
     image: "/Images/MOZZARELLA BALL.jpg",
     description: "Cheesy mozzarella balls fried to perfection.",
     category: "Sides & Snacks",
-    price: { current: 9.9, original: 9.9, currency: "MYR" },
+    price: { current: 9.9, original: 9.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "sides-snacks-4",
@@ -186,7 +207,8 @@ export const menu: MenuItem[] = [
     image: "/Images/HOMEMADE MUSHROOM SOUP.jpg",
     description: "Creamy mushroom soup made in-house.",
     category: "Sides & Snacks",
-    price: { current: 7.9, original: 7.9, currency: "MYR" },
+    price: { current: 7.9, original: 7.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "sides-snacks-5",
@@ -194,7 +216,8 @@ export const menu: MenuItem[] = [
     image: "/Images/FRIES.jpg",
     description: "Crispy french fries with seasoning.",
     category: "Sides & Snacks",
-    price: { current: 6.9, original: 6.9, currency: "MYR" },
+    price: { current: 6.9, original: 6.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "sides-snacks-6",
@@ -202,7 +225,8 @@ export const menu: MenuItem[] = [
     image: "/Images/DER MASH.jpg",
     description: "Creamy mashed potatoes with gravy.",
     category: "Sides & Snacks",
-    price: { current: 6.9, original: 6.9, currency: "MYR" },
+    price: { current: 6.9, original: 6.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "sides-snacks-7",
@@ -210,7 +234,8 @@ export const menu: MenuItem[] = [
     image: "/Images/CHEESY CHICKEN BALL.jpg",
     description: "Chicken balls stuffed with cheese.",
     category: "Sides & Snacks",
-    price: { current: 9.9, original: 9.9, currency: "MYR" },
+    price: { current: 9.9, original: 9.9, currency: "RM" },
+    isDiscount: false,
   },
 
   // Mac & Cheese
@@ -220,7 +245,8 @@ export const menu: MenuItem[] = [
     image: "/Images/DER CABIN MAC N CHEESE (CHICKEN).jpg",
     description: "Macaroni with cheese and chicken.",
     category: "Mac & Cheese",
-    price: { current: 19.9, original: 19.9, currency: "MYR" },
+    price: { current: 19.9, original: 19.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "mac-cheese-2",
@@ -228,7 +254,8 @@ export const menu: MenuItem[] = [
     image: "/Images/DER CABIN MAC N CHEESE (SHRIMP).jpg",
     description: "Macaroni with cheese and shrimp.",
     category: "Mac & Cheese",
-    price: { current: 21.9, original: 21.9, currency: "MYR" },
+    price: { current: 21.9, original: 21.9, currency: "RM" },
+    isDiscount: false,
   },
 
   // Kids' Menu
@@ -238,7 +265,8 @@ export const menu: MenuItem[] = [
     image: "/Images/KID'S FISH & FRIES.jpg",
     description: "Fried fish with fries for kids.",
     category: "Kids' Menu",
-    price: { current: 12.9, original: 12.9, currency: "MYR" },
+    price: { current: 12.9, original: 12.9, currency: "RM" },
+    isDiscount: false,
   },
   {
     id: "kids-menu-2",
@@ -246,6 +274,7 @@ export const menu: MenuItem[] = [
     image: "/Images/KID'S CHICKEN FINGER.jpg",
     description: "Chicken fingers served with fries.",
     category: "Kids' Menu",
-    price: { current: 12.9, original: 12.9, currency: "MYR" },
+    price: { current: 12.9, original: 12.9, currency: "RM" },
+    isDiscount: false,
   },
 ];
