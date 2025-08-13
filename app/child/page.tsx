@@ -98,7 +98,7 @@ export default function ChildHomePage() {
                         {item.description}
                       </p>
                     </div>
-                    <div className="flex items-center gap-2 text-xl font-medium text-yellow-500">
+                    <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
                       {item.price.currency}
                       {item.price.current}
                       {item.isDiscount && (
