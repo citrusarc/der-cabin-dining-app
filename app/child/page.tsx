@@ -62,7 +62,7 @@ export default function ChildHomePage() {
           id={category.replace(/\s+/g, "-").toLowerCase()}
           className="flex flex-col gap-4 mt-2"
         >
-          <h2 className="text-2xl font-medium text-zinc-400">{category}</h2>
+          <h2 className="text-xl font-medium text-zinc-400">{category}</h2>
           <div className="flex flex-col gap-4">
             {menu
               .filter((item) => item.category === category)
@@ -94,7 +94,9 @@ export default function ChildHomePage() {
                           </span>
                         )}
                       </h2>
-                      <p className="text-zinc-400">{item.description}</p>
+                      <p className="text-sm text-zinc-400">
+                        {item.description}
+                      </p>
                     </div>
                     <div className="flex items-center gap-2 text-xl font-medium text-yellow-500">
                       {item.price.currency}
