@@ -40,7 +40,7 @@ export default function ChildHomePage() {
           </p>
         </div>
       </div>
-      <div className="flex gap-4 text-md sm:text-lg font-medium overflow-x-auto whitespace-nowrap scrollbar-hide">
+      <div className="flex py-2 gap-4 text-md sm:text-lg font-medium overflow-x-auto whitespace-nowrap scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent">
         {categories.map((category) => (
           <button
             key={category}
