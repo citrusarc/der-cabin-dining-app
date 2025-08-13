@@ -23,7 +23,7 @@ export default function ChildHomePage() {
   }
 
   return (
-    <div className="flex flex-col gap-4 p-4">
+    <div className="flex flex-col gap-4 p-4 bg-black">
       <div className="flex flex-row px-6 py-8 gap-6 w-full items-center rounded-2xl bg-zinc-800">
         <Image
           src="/Images/brand-logo.png"
@@ -74,7 +74,7 @@ export default function ChildHomePage() {
                       Discount Off %
                     </p>
                   )}
-                  <div className="relative w-28 h-28 aspect-square rounded-xl overflow-hidden flex-shrink-0">
+                  <div className="relative w-24 h-24 aspect-square rounded-xl overflow-hidden flex-shrink-0">
                     <Image
                       fill
                       src={item.image}
