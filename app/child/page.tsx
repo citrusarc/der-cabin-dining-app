@@ -72,11 +72,11 @@ export default function ChildHomePage() {
                   className="relative flex flex-row gap-4 p-4 items-center rounded-2xl overflow-hidden bg-zinc-800"
                 >
                   {item.isDiscount && (
-                    <p className="absolute top-2 left-0 z-10 inline px-1 py-0.5 rounded-tr-sm rounded-br-sm text-sm text-white bg-red-500">
+                    <p className="absolute top-2 left-0 z-10 p-0.5 rounded-tr-sm rounded-br-sm text-sm text-white bg-red-500">
                       Discount Off %
                     </p>
                   )}
-                  <div className="relative w-24 h-24 aspect-square rounded-xl overflow-hidden flex-shrink-0">
+                  <div className="relative w-20 h-20 aspect-square rounded-xl overflow-hidden flex-shrink-0">
                     <Image
                       fill
                       src={item.image}
@@ -90,7 +90,7 @@ export default function ChildHomePage() {
                         {item.name}
                         {item.isBestSeller && (
                           <span>
-                            <ThumbsUp className="w-5 h-5 text-yellow-500" />
+                            <ThumbsUp className="w-4 h-4 text-yellow-500" />
                           </span>
                         )}
                       </h2>
