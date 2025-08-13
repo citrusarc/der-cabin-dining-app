@@ -72,7 +72,7 @@ export default function ChildHomePage() {
                   className="relative flex flex-row gap-4 p-4 items-center rounded-2xl overflow-hidden bg-zinc-800"
                 >
                   {item.isDiscount && (
-                    <p className="absolute top-2 left-0 z-10 p-0.5 rounded-tr-sm rounded-br-sm text-sm text-white bg-red-500">
+                    <p className="absolute top-2 left-0 z-10 px-1 py-0.5 rounded-tr-sm rounded-br-sm text-sm text-white bg-red-500">
                       Discount Off %
                     </p>
                   )}
