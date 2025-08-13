@@ -24,7 +24,7 @@ export default function ChildHomePage() {
 
   return (
     <div className="flex flex-col gap-4 p-4 bg-black">
-      <div className="flex flex-row px-6 py-8 gap-6 w-full items-center rounded-2xl bg-zinc-800">
+      <div className="flex flex-row px-6 py-8 gap-4 w-full items-center rounded-2xl bg-zinc-800">
         <Image
           src="/Images/brand-logo.png"
           alt="Brand Logo"
@@ -32,10 +32,10 @@ export default function ChildHomePage() {
           width={72}
         />
         <div className="flex flex-col">
-          <h1 className="text-2xl font-semibold text-white">
+          <h1 className="text-xl sm:text-2xl font-semibold text-white">
             Der&apos; Cabin Bistro
           </h1>
-          <p className="text-lg font-medium text-yellow-500">
+          <p className="text-md sm:text-lg font-medium text-yellow-500">
             Comfort food, cozy moments
           </p>
         </div>
