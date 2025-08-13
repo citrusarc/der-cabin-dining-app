@@ -10,7 +10,7 @@ export const menu: MenuItem[] = [
     category: "Pasta Parade",
     price: { current: "22.90", original: "22.90", currency: "RM" },
     isDiscount: true,
-    isBestSeller: true,
+    isBestSeller: false,
   },
   {
     id: "pasta-parade-2",
@@ -19,7 +19,7 @@ export const menu: MenuItem[] = [
     description: "Creamy salted egg sauce with assorted seafood.",
     category: "Pasta Parade",
     price: { current: "24.90", original: "24.90", currency: "RM" },
-    isDiscount: false,
+    isDiscount: true,
     isBestSeller: false,
   },
   {
@@ -64,7 +64,7 @@ export const menu: MenuItem[] = [
   },
   {
     id: "pasta-parade-7",
-    name: "Chicken Aglio e Olio Pasta",
+    name: "Chicken Aglio Olio Pasta",
     image: "/Images/pasta-parade-7.jpg",
     description: "Garlic and olive oil pasta topped with grilled chicken.",
     category: "Pasta Parade",
@@ -302,6 +302,51 @@ export const menu: MenuItem[] = [
     image: "/Images/kids-menu-3.jpg",
     description: "Chicken fingers served with fries.",
     category: "Kids' Menu",
+    price: { current: "12.90", original: "12.90", currency: "RM" },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+
+  //Beverages
+  {
+    id: "beverages-1",
+    name: "Ice Lemon Tea",
+    image: "/Images/beverages-1.png",
+    description:
+      "A refreshing iced lemon tea with a crisp citrus flavor and a hint of sweetness.",
+    category: "Beverages",
+    price: { current: "12.90", original: "12.90", currency: "RM" },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "beverages-2",
+    name: "Oreo Milkshake",
+    image: "/Images/beverages-2.png",
+    description:
+      "Creamy milkshake blended with Oreo cookies for a fun and tasty treat.",
+    category: "Beverages",
+    price: { current: "12.90", original: "12.90", currency: "RM" },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "beverages-3",
+    name: "Blue Lemonade",
+    image: "/Images/beverages-3.jpg",
+    description: "Bright and zesty blue lemonade with a playful citrus twist.",
+    category: "Beverages",
+    price: { current: "12.90", original: "12.90", currency: "RM" },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "beverages-4",
+    name: "Strawberry Buttercream",
+    image: "/Images/beverages-4.jpg",
+    description:
+      "Sweet strawberry buttercream drink with a smooth, creamy finish.",
+    category: "Beverages",
     price: { current: "12.90", original: "12.90", currency: "RM" },
     isDiscount: false,
     isBestSeller: false,

@@ -86,7 +86,7 @@ export default function ChildHomePage() {
                   </div>
                   <div className="flex flex-col gap-4">
                     <div>
-                      <h2 className="flex items-center gap-2 text-lg font-semibold text-white">
+                      <h2 className="flex items-center gap-2 text-md font-semibold">
                         {item.name}
                         {item.isBestSeller && (
                           <span>
