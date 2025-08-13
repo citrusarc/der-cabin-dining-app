@@ -40,7 +40,7 @@ export default function ChildHomePage() {
           </p>
         </div>
       </div>
-      <div className="flex gap-4 text-lg font-medium overflow-x-auto whitespace-nowrap scrollbar-hide">
+      <div className="flex gap-4 text-md sm:text-lg font-medium overflow-x-auto whitespace-nowrap scrollbar-hide">
         {categories.map((category) => (
           <button
             key={category}
@@ -69,14 +69,14 @@ export default function ChildHomePage() {
               .map((item) => (
                 <div
                   key={item.id}
-                  className="relative flex flex-row gap-4 p-4 items-center rounded-2xl overflow-hidden bg-zinc-800"
+                  className="relative flex flex-row gap-4 p-4 items-start rounded-2xl overflow-hidden bg-zinc-800"
                 >
                   {item.isDiscount && (
                     <p className="absolute top-2 left-0 z-10 px-1 py-0.5 rounded-tr-sm rounded-br-sm text-sm text-white bg-red-500">
                       Discount Off %
                     </p>
                   )}
-                  <div className="relative w-20 h-20 aspect-square rounded-xl overflow-hidden flex-shrink-0">
+                  <div className="relative w-24 h-24 aspect-square rounded-xl overflow-hidden flex-shrink-0">
                     <Image
                       fill
                       src={item.image}
@@ -84,9 +84,9 @@ export default function ChildHomePage() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-2">
                     <div>
-                      <h2 className="flex items-center gap-2 text-lg font-semibold text-white">
+                      <h2 className="flex items-center gap-2 text-md sm:text-lg font-semibold text-white">
                         {item.name}
                         {item.isBestSeller && (
                           <span>
