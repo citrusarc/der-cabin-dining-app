@@ -11,8 +11,8 @@ export type MenuCategory =
 
 export interface MenuPrice {
   currency: string;
-  original: number;
-  current: number;
+  original: string;
+  current: string;
 }
 
 export interface MenuItem {
@@ -23,4 +23,5 @@ export interface MenuItem {
   category: MenuCategory;
   price: MenuPrice;
   isDiscount: boolean;
+  isBestSeller: boolean;
 }

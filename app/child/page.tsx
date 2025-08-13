@@ -2,15 +2,29 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { ThumbsUp } from "iconoir-react";
 import { menu } from "@/data/menu";
+import { MenuCategory } from "@/types";
 
 export default function ChildHomePage() {
   const categories = [...new Set(menu.map((item) => item.category))];
   const [activeCategory, setActiveCategory] = useState(categories[0]);
 
+  function handleScrollToCategory(category: MenuCategory) {
+    const id = category.replace(/\s+/g, "-").toLowerCase();
+    const target = document.getElementById(id);
+    if (target) {
+      const yOffset = -80;
+      const y =
+        target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+      setActiveCategory(category);
+    }
+  }
+
   return (
     <div className="flex flex-col gap-4 p-4">
-      <div className="flex flex-row px-6 py-8 gap-6 w-full items-center  rounded-2xl bg-zinc-800">
+      <div className="flex flex-row px-6 py-8 gap-6 w-full items-center rounded-2xl bg-zinc-800">
         <Image
           src="/Images/brand-logo.png"
           alt="Brand Logo"
@@ -29,11 +43,7 @@ export default function ChildHomePage() {
           <button
             key={category}
             onClick={() => {
-              const el = document.getElementById(
-                category.replace(/\s+/g, "-").toLowerCase()
-              );
-              if (el) el.scrollIntoView({ behavior: "smooth" });
-              setActiveCategory(category);
+              handleScrollToCategory(category);
             }}
             className={`transition ${
               activeCategory === category ? "text-yellow-500" : "text-zinc-400"
@@ -57,19 +67,31 @@ export default function ChildHomePage() {
               .map((item) => (
                 <div
                   key={item.id}
-                  className="flex flex-row gap-4 p-4 items-center rounded-2xl bg-zinc-800"
+                  className="relative flex flex-row gap-4 p-4 items-center rounded-2xl overflow-hidden bg-zinc-800"
                 >
-                  <div className="relative w-24 h-24 aspect-square rounded-xl overflow-hidden flex-shrink-0">
+                  {item.isDiscount && (
+                    <p className="absolute top-2 left-0 z-10 inline px-1 py-0.5 rounded-tr-sm rounded-br-sm text-sm text-white bg-red-500">
+                      Discount Off %
+                    </p>
+                  )}
+                  <div className="relative w-28 h-28 aspect-square rounded-xl overflow-hidden flex-shrink-0">
                     <Image
                       fill
-                      src="/Images/brand-logo.png"
+                      src={item.image}
                       alt={item.name}
                       className="object-cover"
                     />
                   </div>
                   <div className="flex flex-col gap-4">
                     <div>
-                      <h2 className="text-xl font-semibold">{item.name}</h2>
+                      <h2 className="flex items-center gap-2 text-lg font-semibold">
+                        {item.name}
+                        {item.isBestSeller && (
+                          <span>
+                            <ThumbsUp className="w-5 h-5 text-yellow-500" />
+                          </span>
+                        )}
+                      </h2>
                       <p className="text-zinc-400">{item.description}</p>
                     </div>
                     <div className="flex items-center gap-2 text-xl font-medium text-yellow-500">
@@ -80,11 +102,6 @@ export default function ChildHomePage() {
                           <span className="line-through text-zinc-600">
                             {item.price.currency}
                             {item.price.original}
-                          </span>
-                          <span>
-                            <p className="inline px-1 py-0.5 rounded-sm text-white bg-red-500">
-                              Discount Off %
-                            </p>
                           </span>
                         </span>
                       )}
