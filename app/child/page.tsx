@@ -23,7 +23,7 @@ export default function ChildHomePage() {
   }
 
   return (
-    <div className="flex flex-col gap-4 p-4 bg-black">
+    <div className="flex flex-col gap-4 p-4 mb-12 bg-black">
       <div className="flex flex-row px-6 py-8 gap-4 w-full items-center rounded-2xl bg-zinc-800">
         <Image
           src="/Images/brand-logo.png"
