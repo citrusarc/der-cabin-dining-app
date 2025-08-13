@@ -1,7 +1,7 @@
 export default function HomePage() {
   return (
     <div
-      className="flex items-center justify-center h-screen bg-zinc-900"
+      className="flex items-center justify-center h-screen w-screen overflow-hidden bg-zinc-900"
       style={{
         backgroundImage: "url('/Images/bg-brand-logo.png')",
         backgroundRepeat: "repeat",
