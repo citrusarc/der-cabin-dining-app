@@ -32,7 +32,9 @@ export default function ChildHomePage() {
           width={72}
         />
         <div className="flex flex-col">
-          <h1 className="text-2xl font-semibold">Der&apos; Cabin Bistro</h1>
+          <h1 className="text-2xl font-semibold text-white">
+            Der&apos; Cabin Bistro
+          </h1>
           <p className="text-lg font-medium text-yellow-500">
             Comfort food, cozy moments
           </p>
@@ -84,7 +86,7 @@ export default function ChildHomePage() {
                   </div>
                   <div className="flex flex-col gap-4">
                     <div>
-                      <h2 className="flex items-center gap-2 text-lg font-semibold">
+                      <h2 className="flex items-center gap-2 text-lg font-semibold text-white">
                         {item.name}
                         {item.isBestSeller && (
                           <span>

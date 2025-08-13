@@ -4,7 +4,7 @@ export const menu: MenuItem[] = [
   // Pasta Parade
   {
     id: "pasta-parade-1",
-    name: "Seafood Aglio e Olio Pasta",
+    name: "Seafood Aglio Olio Pasta",
     image: "/Images/pasta-parade-1.jpg",
     description: "Pasta with fresh seafood in garlic and olive oil sauce.",
     category: "Pasta Parade",
