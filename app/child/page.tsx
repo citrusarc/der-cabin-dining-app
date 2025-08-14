@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { ThumbsUp } from "iconoir-react";
 import { menu } from "@/data/menu";
@@ -38,10 +39,17 @@ export default function ChildHomePage() {
           <h1 className="text-xl sm:text-2xl font-semibold text-white">
             Der&apos; Cabin Bistro
           </h1>
-          <p className="text-md sm:text-lg font-medium text-yellow-500">
+          <p className="text-md sm:text-lg font-medium text-zinc-400">
             Comfort food, cozy moments
           </p>
-          {/* Add link here */}
+          <Link
+            href="https://www.dercabin.com.my/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-md sm:text-lg font-medium text-yellow-500"
+          >
+            www.dercabin.com.my
+          </Link>
         </div>
       </div>
       <div className="flex py-2 gap-4 text-md sm:text-lg font-medium overflow-x-auto whitespace-nowrap scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent">
