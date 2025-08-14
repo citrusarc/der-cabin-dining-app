@@ -10,7 +10,7 @@ export const menu: MenuItem[] = [
     category: "Pasta Parade",
     price: { currency: "RM", current: "22.90", original: "22.90" },
     isDiscount: true,
-    isBestSeller: false,
+    isBestSeller: true,
   },
   {
     id: "pasta-parade-2",
@@ -20,7 +20,7 @@ export const menu: MenuItem[] = [
     category: "Pasta Parade",
     price: { currency: "RM", current: "24.90", original: "24.90" },
     isDiscount: true,
-    isBestSeller: false,
+    isBestSeller: true,
   },
   {
     id: "pasta-parade-3",

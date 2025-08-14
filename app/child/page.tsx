@@ -1,14 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { ThumbsUp } from "iconoir-react";
 import { menu } from "@/data/menu";
-import { MenuCategory } from "@/types";
+import { MenuCategory, MenuItem } from "@/types";
+import Modal from "@/components/ui/Modal";
 
 export default function ChildHomePage() {
   const categories = [...new Set(menu.map((item) => item.category))];
   const [activeCategory, setActiveCategory] = useState(categories[0]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
 
   function handleScrollToCategory(category: MenuCategory) {
     const id = category.replace(/\s+/g, "-").toLowerCase();
@@ -38,6 +41,7 @@ export default function ChildHomePage() {
           <p className="text-md sm:text-lg font-medium text-yellow-500">
             Comfort food, cozy moments
           </p>
+          {/* Add link here */}
         </div>
       </div>
       <div className="flex py-2 gap-4 text-md sm:text-lg font-medium overflow-x-auto whitespace-nowrap scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent">
@@ -70,6 +74,10 @@ export default function ChildHomePage() {
                 <div
                   key={item.id}
                   className="relative flex flex-row gap-4 p-4 items-start rounded-2xl overflow-hidden bg-zinc-800"
+                  onClick={() => {
+                    setSelectedItem(item);
+                    setIsOpen(true);
+                  }}
                 >
                   {item.isDiscount && (
                     <p className="absolute top-2 left-0 z-10 px-1 py-0.5 rounded-tr-sm rounded-br-sm text-sm text-white bg-red-500">
@@ -102,12 +110,12 @@ export default function ChildHomePage() {
                       {item.price.currency}
                       {item.price.current}
                       {item.isDiscount && (
-                        <span className="flex items-center gap-2 text-sm ">
+                        <div className="flex items-center gap-2 text-sm ">
                           <span className="line-through text-zinc-600">
                             {item.price.currency}
                             {item.price.original}
                           </span>
-                        </span>
+                        </div>
                       )}
                     </div>
                   </div>
@@ -116,6 +124,59 @@ export default function ChildHomePage() {
           </div>
         </section>
       ))}
+
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+        {selectedItem && (
+          <>
+            <div className="relative w-full h-fit aspect-square rounded-xl overflow-hidden flex-shrink-0">
+              <Image
+                fill
+                src={selectedItem.image}
+                alt={selectedItem.name}
+                className="object-cover"
+              />
+            </div>
+            <div className="flex flex-col gap-2">
+              <div>
+                <h2 className="flex items-center gap-2 text-md sm:text-lg font-semibold text-white">
+                  {selectedItem.name}
+                  {selectedItem.isBestSeller && (
+                    <span>
+                      <ThumbsUp className="w-4 h-4 text-yellow-500" />
+                    </span>
+                  )}
+                </h2>
+                <p className="text-sm text-zinc-400">
+                  {selectedItem.description}
+                </p>
+              </div>
+              {selectedItem.isDiscount && (
+                <p className="w-fit px-1 py-0.5 rounded-sm text-sm text-white bg-red-500">
+                  Discount Off %
+                </p>
+              )}
+              <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
+                {selectedItem.price.currency}
+                {selectedItem.price.current}
+                {selectedItem.isDiscount && (
+                  <div className="flex items-center gap-2 text-sm ">
+                    <span className="line-through text-zinc-600">
+                      {selectedItem.price.currency}
+                      {selectedItem.price.original}
+                    </span>
+                  </div>
+                )}
+              </div>
+            </div>
+            <button
+              onClick={() => setIsOpen(false)}
+              className="flex p-2 w-full justify-center rounded-full text-black bg-white"
+            >
+              Close
+            </button>
+          </>
+        )}
+      </Modal>
     </div>
   );
 }
