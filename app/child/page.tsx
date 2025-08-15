@@ -97,7 +97,7 @@ export default function ChildHomePage() {
                       fill
                       src={item.image}
                       alt={item.name}
-                      className="object-cover"
+                      className="object-cover object-center"
                     />
                   </div>
                   <div className="flex flex-col gap-2">
@@ -141,7 +141,7 @@ export default function ChildHomePage() {
                 fill
                 src={selectedItem.image}
                 alt={selectedItem.name}
-                className="object-cover"
+                className="object-cover object-center"
               />
             </div>
             <div className="flex flex-col gap-2">

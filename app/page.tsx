@@ -1,7 +1,7 @@
 export default function HomePage() {
   return (
     <div
-      className="flex items-center justify-center h-screen w-screen overflow-hidden bg-zinc-900"
+      className="flex items-center justify-center h-screen w-screen bg-zinc-900"
       style={{
         backgroundImage: "url('/Images/bg-brand-logo.png')",
         backgroundRepeat: "repeat",
@@ -16,11 +16,11 @@ export default function HomePage() {
           allowFullScreen
         />
       </div>
-      <div className="md:hidden w-full h-screen">
+      <div className="md:hidden w-full min-h-screen">
         <iframe
           src="child"
           title="Der Cabin Dining App"
-          className="w-full h-full"
+          className="w-full min-h-screen"
           allowFullScreen
         />
       </div>
