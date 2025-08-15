@@ -40,7 +40,7 @@ export default function ChildHomePage() {
             Der&apos; Cabin Bistro
           </h1>
           <p className="text-md sm:text-lg font-medium text-zinc-400">
-            Comfort food, cozy moments
+            Eat Good Feel Good
           </p>
           <Link
             href="https://www.dercabin.com.my/"

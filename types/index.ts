@@ -1,13 +1,20 @@
 export type MenuCategory =
-  | "Pasta Parade"
-  | "Chicken Corner"
-  | "Grill & Steak"
-  | "From the Sea"
-  | "Burger Bliss"
-  | "Sides & Snacks"
-  | "Mac & Cheese"
-  | "Kids' Menu"
-  | "Beverages";
+  | "Starters"
+  | "Pasta"
+  | "For Kiddies"
+  | "Chicken Feast"
+  | "Today’s Specialty"
+  | "Burgers"
+  | "From The Sea"
+  | "Beverages"
+  | "Fresh Fruit Juices"
+  | "Coffee"
+  | "Hot Drinks"
+  | "Frappe"
+  | "Sparkling Drinks"
+  | "Buttercream Series"
+  | "Desserts"
+  | "Extras";
 
 export interface MenuPrice {
   currency: string;
