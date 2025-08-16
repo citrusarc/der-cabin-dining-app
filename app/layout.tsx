@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Der' Cabin Bistro | Comfort Food & Cozy Moments",
   description:
     "Experience delicious comfort food and cozy dining at Der' Cabin Bistro. Your go-to spot for homestyle meals and warm vibes.",
+  icons: {
+    icon: "/favicon.ico",
+  },
   keywords: [
     "Der Cabin Bistro",
     "comfort food",
