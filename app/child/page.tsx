@@ -30,6 +30,8 @@ export default function ChildHomePage() {
     <div className="flex flex-col gap-4 p-4 bg-black">
       <div className="flex flex-row px-6 py-8 gap-4 w-full items-center rounded-2xl bg-zinc-800">
         <Image
+          priority
+          fetchPriority="high"
           src="/Images/brand-logo.png"
           alt="Brand Logo"
           height={72}
@@ -95,6 +97,8 @@ export default function ChildHomePage() {
                   <div className="relative w-24 h-24 aspect-square rounded-xl overflow-hidden flex-shrink-0">
                     <Image
                       fill
+                      priority
+                      fetchPriority="high"
                       src={item.image}
                       alt={item.name}
                       className="object-cover object-center"
@@ -139,6 +143,8 @@ export default function ChildHomePage() {
             <div className="relative w-full h-fit aspect-square rounded-xl overflow-hidden flex-shrink-0">
               <Image
                 fill
+                priority
+                fetchPriority="high"
                 src={selectedItem.image}
                 alt={selectedItem.name}
                 className="object-cover object-center"
