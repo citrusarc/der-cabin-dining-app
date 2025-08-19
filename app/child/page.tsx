@@ -50,7 +50,7 @@ export default function ChildHomePage() {
             rel="noopener noreferrer"
             className="mt-2 "
           >
-            <button className="flex p-2 gap-1 items-center text-md sm:text-lg font-medium rounded-full hover:cursor-pointer text-yellow-800 hover:text-white bg-yellow-500 hover:bg-yellow-600">
+            <button className="flex px-4 py-2 gap-1 items-center text-md sm:text-lg font-medium rounded-full hover:cursor-pointer text-yellow-800 hover:text-white bg-yellow-500 hover:bg-yellow-600">
               Visit our website
               <span>
                 <ArrowUpRight className="w-5 h-5" />
