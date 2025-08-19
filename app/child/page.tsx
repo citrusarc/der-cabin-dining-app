@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { ThumbsUp } from "iconoir-react";
+import { ArrowUpRight, ThumbsUp } from "iconoir-react";
 import { menu } from "@/data/menu";
 import { MenuCategory, MenuItem } from "@/types";
 import Modal from "@/components/ui/Modal";
@@ -48,9 +48,14 @@ export default function ChildHomePage() {
             href="https://www.dercabin.com.my/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-md sm:text-lg font-medium text-yellow-500"
+            className="mt-2 "
           >
-            www.dercabin.com.my
+            <button className="flex px-4 py-2 gap-1 items-center text-md sm:text-lg font-medium rounded-full hover:cursor-pointer text-yellow-800 hover:text-white bg-yellow-500 hover:bg-yellow-600">
+              Visit our website
+              <span>
+                <ArrowUpRight className="w-5 h-5" />
+              </span>
+            </button>
           </Link>
         </div>
       </div>
