@@ -123,15 +123,55 @@ export default function ChildHomePage() {
                         {item.description}
                       </p>
                     </div>
-                    <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
-                      {item.price.currency}
-                      {item.price.current}
-                      {item.isDiscount && (
-                        <div className="flex items-center gap-2 text-sm ">
-                          <span className="line-through text-zinc-600">
+                    <div className="flex flex-row gap-4">
+                      {item.price.standard && (
+                        <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
+                          {item.price.currency}
+                          {item.price.standard.current}
+                          {item.isDiscount && (
+                            <div className="flex items-center gap-2 text-sm ">
+                              <span className="line-through text-zinc-600">
+                                {item.price.currency}
+                                {item.price.standard.original}
+                              </span>
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {item.price.hot && (
+                        <div>
+                          <div className="text-sm text-zinc-600">Hot</div>
+                          <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
                             {item.price.currency}
-                            {item.price.original}
-                          </span>
+                            {item.price.hot.current}
+                            {item.isDiscount && (
+                              <div className="flex items-center gap-2 text-sm ">
+                                <span className="line-through text-zinc-600">
+                                  {item.price.currency}
+                                  {item.price.hot.original}
+                                </span>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      )}
+
+                      {item.price.cold && (
+                        <div>
+                          <div className="text-sm text-zinc-600">Cold</div>
+                          <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
+                            {item.price.currency}
+                            {item.price.cold.current}
+                            {item.isDiscount && (
+                              <div className="flex items-center gap-2 text-sm ">
+                                <span className="line-through text-zinc-600">
+                                  {item.price.currency}
+                                  {item.price.cold.original}
+                                </span>
+                              </div>
+                            )}
+                          </div>
                         </div>
                       )}
                     </div>
@@ -174,15 +214,56 @@ export default function ChildHomePage() {
                   Discount Off %
                 </p>
               )}
-              <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
-                {selectedItem.price.currency}
-                {selectedItem.price.current}
-                {selectedItem.isDiscount && (
-                  <div className="flex items-center gap-2 text-sm ">
-                    <span className="line-through text-zinc-600">
+
+              <div className="flex flex-row gap-4">
+                {selectedItem.price.standard && (
+                  <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
+                    {selectedItem.price.currency}
+                    {selectedItem.price.standard.current}
+                    {selectedItem.isDiscount && (
+                      <div className="flex items-center gap-2 text-sm ">
+                        <span className="line-through text-zinc-600">
+                          {selectedItem.price.currency}
+                          {selectedItem.price.standard.original}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {selectedItem.price.hot && (
+                  <div>
+                    <div className="text-sm text-zinc-600">Hot</div>
+                    <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
                       {selectedItem.price.currency}
-                      {selectedItem.price.original}
-                    </span>
+                      {selectedItem.price.hot.current}
+                      {selectedItem.isDiscount && (
+                        <div className="flex items-center gap-2 text-sm ">
+                          <span className="line-through text-zinc-600">
+                            {selectedItem.price.currency}
+                            {selectedItem.price.hot.original}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {selectedItem.price.cold && (
+                  <div>
+                    <div className="text-sm text-zinc-600">Cold</div>
+                    <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
+                      {selectedItem.price.currency}
+                      {selectedItem.price.cold.current}
+                      {selectedItem.isDiscount && (
+                        <div className="flex items-center gap-2 text-sm ">
+                          <span className="line-through text-zinc-600">
+                            {selectedItem.price.currency}
+                            {selectedItem.price.cold.original}
+                          </span>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 )}
               </div>

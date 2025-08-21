@@ -16,10 +16,16 @@ export type MenuCategory =
   | "Desserts"
   | "Extras";
 
+export interface MenuPriceDetail {
+  current: string;
+  original: string;
+}
+
 export interface MenuPrice {
   currency: string;
-  original: string;
-  current: string;
+  standard?: MenuPriceDetail;
+  hot?: MenuPriceDetail;
+  cold?: MenuPriceDetail;
 }
 
 export interface MenuItem {
