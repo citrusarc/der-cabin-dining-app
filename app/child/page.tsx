@@ -302,7 +302,7 @@ export default function ChildHomePage() {
 
       {showScrollTop && (
         <button onClick={scrollToTop}>
-          <ArrowUpCircleSolid className="fixed bottom-32 right-6 w-16 h-16 shadow-lg hover:cursor-pointer text-yellow-500/50" />
+          <ArrowUpCircleSolid className="fixed bottom-32 right-6 w-14 h-14 shadow-lg hover:cursor-pointer text-yellow-500/50" />
         </button>
       )}
     </div>
