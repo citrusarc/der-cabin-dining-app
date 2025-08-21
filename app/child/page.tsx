@@ -2,8 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import { ArrowUpRight, ThumbsUp } from "iconoir-react";
+import { useEffect, useState } from "react";
+import {
+  ArrowUp,
+  ArrowUpCircleSolid,
+  ArrowUpRight,
+  ThumbsUp,
+} from "iconoir-react";
 import { menu } from "@/data/menu";
 import { MenuCategory, MenuItem } from "@/types";
 import Modal from "@/components/ui/Modal";
@@ -13,6 +18,7 @@ export default function ChildHomePage() {
   const [activeCategory, setActiveCategory] = useState(categories[0]);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   function handleScrollToCategory(category: MenuCategory) {
     const id = category.replace(/\s+/g, "-").toLowerCase();
@@ -25,6 +31,22 @@ export default function ChildHomePage() {
       setActiveCategory(category);
     }
   }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div className="flex flex-col gap-4 p-4 bg-black">
@@ -277,6 +299,12 @@ export default function ChildHomePage() {
           </>
         )}
       </Modal>
+
+      {showScrollTop && (
+        <button onClick={scrollToTop}>
+          <ArrowUpCircleSolid className="fixed bottom-6 right-6 w-12 h-12 shadow-lg hover:cursor-pointer text-yellow-500/50" />
+        </button>
+      )}
     </div>
   );
 }
