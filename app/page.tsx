@@ -16,11 +16,11 @@ export default function HomePage() {
           allowFullScreen
         />
       </div>
-      <div className="md:hidden w-full min-h-screen">
+      <div className="md:hidden w-full h-screen">
         <iframe
           src="child"
           title="Der Cabin Dining App"
-          className="w-full min-h-screen"
+          className="w-full h-full"
           allowFullScreen
         />
       </div>
