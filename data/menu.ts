@@ -326,6 +326,7 @@ export const menu: MenuItem[] = [
   {
     id: "chicken-1",
     name: "Cabin Chicken Chop (Chicken Breast Part)",
+    label: "(6pcs)",
     image: "/Images/chicken-1.jpg",
     description:
       "Crispy fried chicken breast part, tender inside — with savoury sauce and served with fries and coleslaw.",

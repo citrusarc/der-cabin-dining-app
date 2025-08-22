@@ -103,7 +103,7 @@ export default function ChildHomePage() {
 
       <div
         ref={categoryRef}
-        className={`sticky top-0 z-50 grid grid-rows-3 grid-flow-col gap-4 text-md sm:text-lg font-medium overflow-x-auto whitespace-nowrap bg-black/50 backdrop-blur-sm transition-all duration-300 scrollbar-none scrollbar-thumb-transparent scrollbar-track-transparent ${
+        className={`sticky top-0 z-50 grid grid-rows-3 grid-flow-col gap-4 text-md sm:text-lg font-semibold overflow-x-auto whitespace-nowrap bg-black/50 backdrop-blur-sm transition-all duration-300 scrollbar-none scrollbar-thumb-transparent scrollbar-track-transparent ${
           isSticky ? "py-4" : "py-2"
         }`}
       >
@@ -175,6 +175,9 @@ export default function ChildHomePage() {
                         <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
                           {item.price.currency}
                           {item.price.standard.current}
+                          <div className="flex items-center gap-2 text-sm text-zinc-400">
+                            {item.label}
+                          </div>
                           {item.isDiscount && (
                             <div className="flex items-center gap-2 text-sm ">
                               <span className="line-through text-zinc-600">
@@ -267,6 +270,9 @@ export default function ChildHomePage() {
                   <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
                     {selectedItem.price.currency}
                     {selectedItem.price.standard.current}
+                    <div className="flex items-center gap-2 text-sm text-zinc-400">
+                      {selectedItem.label}
+                    </div>
                     {selectedItem.isDiscount && (
                       <div className="flex items-center gap-2 text-sm ">
                         <span className="line-through text-zinc-600">
