@@ -12,11 +12,11 @@ export default function HomePage() {
         <iframe
           src="child"
           title="Der Cabin Dining App"
-          className="w-full h-full rounded-2xl"
+          className="w-full h-screen rounded-2xl"
           allowFullScreen
         />
       </div>
-      <div className="md:hidden w-full h-[100dvh]">
+      <div className="md:hidden w-full h-screen">
         <iframe
           src="child"
           title="Der Cabin Dining App"
