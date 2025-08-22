@@ -18,7 +18,7 @@ export const menu: MenuItem[] = [
     name: "Onion Ring",
     image: "/Images/starters-2.jpg",
     description:
-      "Thick-cut onions coated in a crunchy golden batter and fried to perfection and served hot.",
+      "Thick-cut onions coated in a crunchy golden batter, fried to perfection and served hot.",
     category: "Starters",
     price: {
       currency: "RM",
@@ -69,7 +69,7 @@ export const menu: MenuItem[] = [
     name: "Mozzarella Sticks",
     image: "/Images/starters-5.jpg",
     description:
-      "Breaded sticks of gooey mozzarella cheese, fried until golden and served with brown sauce.",
+      "Breaded sticks of mozzarella cheese, fried until golden and served with brown sauce.",
     category: "Starters",
     price: {
       currency: "RM",
@@ -121,7 +121,7 @@ export const menu: MenuItem[] = [
     name: "Aglio E Olio with Grilled Chicken",
     image: "/Images/pasta-1.jpg",
     description:
-      "Spaghetti sauteed with garlic, chili flakes, and fopped with tender and juicy grilled chicken thigh.",
+      "Spaghetti sautéed with garlic, chili flakes, and topped with tender and juicy grilled chicken thigh.",
     category: "Pasta",
     price: {
       currency: "RM",
@@ -239,7 +239,7 @@ export const menu: MenuItem[] = [
     name: "Mac ‘N’ Cheese (Chicken Thigh)",
     image: "/Images/pasta-8.jpg",
     description:
-      "Creamy macaroni and cheese topped with fender, juicy chicken thigh pieces.",
+      "Creamy macaroni and cheese topped with tender, juicy chicken thigh pieces.",
     category: "Pasta",
     price: {
       currency: "RM",
@@ -379,7 +379,7 @@ export const menu: MenuItem[] = [
     name: "Salted Egg Chicken (Thigh Part)",
     image: "/Images/chicken-4.jpg",
     description:
-      "Chicken thigh coated with seasoned flour, fried to crispy perfection, serve with salted egg sauce, fries and coleslaw.",
+      "Chicken thigh coated with seasoned flour, fried to crispy perfection, served with salted egg sauce, fries and coleslaw.",
     category: "Chicken Feast",
     price: {
       currency: "RM",
@@ -434,7 +434,7 @@ export const menu: MenuItem[] = [
     name: "Burger (Beef)",
     image: "/Images/burgers-1.jpg",
     description:
-      "Juicy beef patty dip in savory sauce served in a toasted bun, topped with streaky beef, crunchy pickles and fies.",
+      "Juicy beef patty dipped in savory sauce served in a toasted bun, topped with streaky beef, crunchy pickles and fries.",
     category: "Burgers",
     price: {
       currency: "RM",
@@ -487,7 +487,7 @@ export const menu: MenuItem[] = [
     name: "Fish & Chips",
     image: "/Images/sea-1.jpg",
     description:
-      "Crispy golden breadcrumbs fish served with fries, savoury sauce or tartar sauce.",
+      "Crispy golden breadcrumb-coated fish served with fries, savoury sauce or tartar sauce.",
     category: "From The Sea",
     price: {
       currency: "RM",
@@ -790,7 +790,7 @@ export const menu: MenuItem[] = [
     name: "Hot Honey Lemon",
     image: "/Images/hot-drinks-4.jpg",
     description:
-      "A warm blend of natural honey and fresh lemon, served soothing and comforting.",
+      "A warm blend of natural honey and fresh lemon, soothing and comforting.",
     category: "Hot Drinks",
     price: {
       currency: "RM",
