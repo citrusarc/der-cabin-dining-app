@@ -103,7 +103,7 @@ export default function ChildHomePage() {
 
       <div
         ref={categoryRef}
-        className={`sticky top-0 z-50 flex gap-4 text-md sm:text-lg font-medium overflow-x-auto whitespace-nowrap bg-black/50 transition-all duration-300 scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent ${
+        className={`sticky top-0 z-50 flex gap-4 text-md sm:text-lg font-medium overflow-x-auto whitespace-nowrap bg-black/80 backdrop-blur-sm transition-all duration-300 scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent ${
           isSticky ? "py-4" : "py-2"
         }`}
       >
