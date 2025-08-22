@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowUp,
   ArrowUpCircleSolid,
@@ -19,6 +19,8 @@ export default function ChildHomePage() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  const categoryRef = useRef<HTMLDivElement | null>(null);
 
   function handleScrollToCategory(category: MenuCategory) {
     const id = category.replace(/\s+/g, "-").toLowerCase();
@@ -42,6 +44,21 @@ export default function ChildHomePage() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const sentinel = document.querySelector("#category-sentinel");
+    if (!sentinel) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsSticky(!entry.isIntersecting);
+      },
+      { rootMargin: "-1px 0px 0px 0px", threshold: 0 }
+    );
+
+    observer.observe(sentinel);
+    return () => observer.disconnect();
   }, []);
 
   const scrollToTop = () => {
@@ -82,7 +99,14 @@ export default function ChildHomePage() {
         </div>
       </div>
 
-      <div className="sticky top-0 z-50 flex py-2 gap-4 text-md sm:text-lg font-medium overflow-x-auto whitespace-nowrap bg-black scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent">
+      <div id="category-sentinel" className="h-0"></div>
+
+      <div
+        ref={categoryRef}
+        className={`sticky top-0 z-50 flex gap-4 text-md sm:text-lg font-medium overflow-x-auto whitespace-nowrap bg-black transition-all duration-300 scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent ${
+          isSticky ? "py-4" : "py-2"
+        }`}
+      >
         {categories.map((category) => (
           <button
             key={category}
