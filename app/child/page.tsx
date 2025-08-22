@@ -26,7 +26,7 @@ export default function ChildHomePage() {
     const id = category.replace(/\s+/g, "-").toLowerCase();
     const target = document.getElementById(id);
     if (target) {
-      const yOffset = -60;
+      const yOffset = -120;
       const y =
         target.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
