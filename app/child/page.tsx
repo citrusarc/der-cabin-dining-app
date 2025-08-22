@@ -103,7 +103,7 @@ export default function ChildHomePage() {
 
       <div
         ref={categoryRef}
-        className={`sticky top-0 z-50 flex gap-4 text-md sm:text-lg font-medium overflow-x-auto whitespace-nowrap bg-black/50 backdrop-blur-sm transition-all duration-300 scrollbar-none scrollbar-thumb-transparent scrollbar-track-transparent ${
+        className={`sticky top-0 z-50 grid grid-rows-3 grid-flow-col gap-4 text-md sm:text-lg font-medium overflow-x-auto whitespace-nowrap bg-black/50 backdrop-blur-sm transition-all duration-300 scrollbar-none scrollbar-thumb-transparent scrollbar-track-transparent ${
           isSticky ? "py-4" : "py-2"
         }`}
       >
@@ -113,7 +113,7 @@ export default function ChildHomePage() {
             onClick={() => {
               handleScrollToCategory(category);
             }}
-            className={`transition ${
+            className={`transition text-left ${
               activeCategory === category ? "text-yellow-500" : "text-zinc-400"
             }`}
           >
