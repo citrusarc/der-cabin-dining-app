@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "casual dining",
     "family restaurant",
   ],
-  authors: [{ name: "Der' Cabin Bistro Team" }],
+  authors: [{ name: "Der' Cabin Bistro" }],
   openGraph: {
     title: "Der' Cabin Bistro | Eat Good, Feel Good",
     description:
