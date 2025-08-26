@@ -14,41 +14,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Der' Cabin Bistro | Comfort Food & Cozy Moments",
+  title: "Der' Cabin Bistro | Eat Good, Feel Good",
   description:
-    "Experience delicious comfort food and cozy dining at Der' Cabin Bistro. Your go-to spot for homestyle meals and warm vibes.",
-  icons: {
-    icon: "/favicon.ico",
-  },
+    "Discover Der' Cabin Bistro — a cozy spot for hearty meals, fresh flavors, and a welcoming atmosphere. Eat good, feel good, and enjoy every bite!",
   keywords: [
-    "Der Cabin Bistro",
-    "comfort food",
+    "Der' Cabin Bistro",
+    "restaurant",
+    "bistro",
     "cozy dining",
-    "homestyle meals",
-    "local restaurant",
-    "food delivery",
-    "dercabinbistro.com",
+    "comfort food",
+    "eat good feel good",
+    "casual dining",
+    "family restaurant",
   ],
-  authors: [{ name: "Der' Cabin Bistro" }],
-  creator: "Der' Cabin Bistro",
+  authors: [{ name: "Der' Cabin Bistro Team" }],
   openGraph: {
-    title: "Der' Cabin Bistro | Comfort Food & Cozy Moments",
+    title: "Der' Cabin Bistro | Eat Good, Feel Good",
     description:
-      "Experience delicious comfort food and cozy dining at Der' Cabin Bistro. Your go-to spot for homestyle meals and warm vibes.",
-    url: "https://dercabinbistro.com",
+      "Join us at Der' Cabin Bistro for a cozy dining experience filled with hearty meals and warm hospitality.",
+    url: "https://www.dercabinbistro.com",
     siteName: "Der' Cabin Bistro",
     images: [
       {
-        url: "https://dercabinbistro.com/Images/banner.png",
+        url: "https://www.dercabinbistro.com/Images/banner.png",
         width: 1200,
         height: 630,
-        alt: "Der' Cabin Bistro Banner",
-      },
-      {
-        url: "https://dercabinbistro.com/Images/brand-logo.png",
-        width: 800,
-        height: 600,
-        alt: "Der' Cabin Bistro Logo",
+        alt: "Der' Cabin Bistro interior and delicious meals",
       },
     ],
     locale: "en_US",
@@ -56,18 +47,22 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Der' Cabin Bistro | Comfort Food & Cozy Moments",
+    title: "Der' Cabin Bistro | Eat Good, Feel Good",
     description:
-      "Experience delicious comfort food and cozy dining at Der' Cabin Bistro. Your go-to spot for homestyle meals and warm vibes.",
-    images: ["https://dercabinbistro.com/Images/banner.png"],
+      "Cozy vibes, hearty meals, and fresh flavors — that's Der' Cabin Bistro. Eat good, feel good!",
+    images: ["https://www.dercabinbistro.com/Images/banner.png"],
     creator: "@dercabinbistro",
   },
+  metadataBase: new URL("https://www.dercabinbistro.com"),
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
     },
   },
 };
