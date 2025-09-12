@@ -8,7 +8,7 @@ export const menu: MenuItem[] = [
     image: "/Images/starters-1.jpg",
     description:
       "Crispy golden potato fries, lightly salted for the perfect crunch with every bite.",
-    category: "Starters",
+    category: "starters",
     price: { currency: "RM", standard: { current: "7.90", original: "7.90" } },
     isDiscount: false,
     isBestSeller: false,
@@ -19,7 +19,7 @@ export const menu: MenuItem[] = [
     image: "/Images/starters-2.jpg",
     description:
       "Thick-cut onions coated in a crunchy golden batter, fried to perfection and served hot.",
-    category: "Starters",
+    category: "starters",
     price: {
       currency: "RM",
       standard: {
@@ -36,7 +36,7 @@ export const menu: MenuItem[] = [
     image: "/Images/starters-3.jpg",
     description:
       "Creamy, buttery mashed potatoes, whipped smooth and seasoned to comforting perfection.",
-    category: "Starters",
+    category: "starters",
     price: {
       currency: "RM",
       standard: {
@@ -53,7 +53,7 @@ export const menu: MenuItem[] = [
     image: "/Images/starters-4.jpg",
     description:
       "Velvety soup made from fresh mushrooms, simmered with herbs and cream for rich flavor.",
-    category: "Starters",
+    category: "starters",
     price: {
       currency: "RM",
       standard: {
@@ -70,7 +70,7 @@ export const menu: MenuItem[] = [
     image: "/Images/starters-5.jpg",
     description:
       "Breaded sticks of mozzarella cheese, fried until golden and served with brown sauce.",
-    category: "Starters",
+    category: "starters",
     price: {
       currency: "RM",
       standard: {
@@ -87,7 +87,7 @@ export const menu: MenuItem[] = [
     image: "/Images/starters-6.jpg",
     description:
       "Crisp tortilla chips topped with savoury beef con carne and nachos cheese drizzle.",
-    category: "Starters",
+    category: "starters",
     price: {
       currency: "RM",
       standard: {
@@ -103,7 +103,7 @@ export const menu: MenuItem[] = [
     name: "Buffalo Chicken Wing (5 pcs)",
     image: "/Images/starters-7.jpg",
     description: "Sweet & spicy chicken wings with creamy garlic sauce.",
-    category: "Starters",
+    category: "starters",
     price: {
       currency: "RM",
       standard: {
@@ -122,7 +122,7 @@ export const menu: MenuItem[] = [
     image: "/Images/pasta-1.jpg",
     description:
       "Spaghetti sautéed with garlic, chili flakes, and topped with tender and juicy grilled chicken thigh.",
-    category: "Pasta",
+    category: "pasta",
     price: {
       currency: "RM",
       standard: {
@@ -139,7 +139,7 @@ export const menu: MenuItem[] = [
     image: "/Images/pasta-2.jpg",
     description:
       "Spaghetti sauteed with garlic, chili flakes and served with a medley of fresh seafood.",
-    category: "Pasta",
+    category: "pasta",
     price: {
       currency: "RM",
       standard: {
@@ -156,7 +156,7 @@ export const menu: MenuItem[] = [
     image: "/Images/pasta-3.jpg",
     description:
       "Rich, creamy alfredo sauce coats every strand of pasta, topped with juicy, perfectly grilled chicken.",
-    category: "Pasta",
+    category: "pasta",
     price: {
       currency: "RM",
       standard: {
@@ -173,7 +173,7 @@ export const menu: MenuItem[] = [
     image: "/Images/pasta-4.jpg",
     description:
       "Spaghetti tossed with garlic, chili flakes, and served with juicy shrimp.",
-    category: "Pasta",
+    category: "pasta",
     price: {
       currency: "RM",
       standard: {
@@ -190,7 +190,7 @@ export const menu: MenuItem[] = [
     image: "/Images/pasta-5.jpg",
     description:
       "Creamy, savory salted egg sauce coats every strand of pasta, topped with juicy and flavorful chicken thigh.",
-    category: "Pasta",
+    category: "pasta",
     price: {
       currency: "RM",
       standard: {
@@ -207,7 +207,7 @@ export const menu: MenuItem[] = [
     image: "/Images/pasta-6.jpg",
     description:
       "Creamy, savory salted egg sauce coats every strand of pasta, served with succulent prawns and tender squid.",
-    category: "Pasta",
+    category: "pasta",
     price: {
       currency: "RM",
       standard: {
@@ -223,7 +223,7 @@ export const menu: MenuItem[] = [
     name: "Meatball Pasta",
     image: "/Images/pasta-7.jpg",
     description: "Spaghetti served with beef meatballs in rich tomato sauce.",
-    category: "Pasta",
+    category: "pasta",
     price: {
       currency: "RM",
       standard: {
@@ -240,7 +240,7 @@ export const menu: MenuItem[] = [
     image: "/Images/pasta-8.jpg",
     description:
       "Creamy macaroni and cheese topped with tender, juicy chicken thigh pieces.",
-    category: "Pasta",
+    category: "pasta",
     price: {
       currency: "RM",
       standard: {
@@ -257,7 +257,7 @@ export const menu: MenuItem[] = [
     image: "/Images/pasta-9.jpg",
     description:
       "Creamy macaroni and cheese topped with tender, succulent shrimp.",
-    category: "Pasta",
+    category: "pasta",
     price: {
       currency: "RM",
       standard: {
@@ -276,7 +276,7 @@ export const menu: MenuItem[] = [
     image: "/Images/kids-1.jpg",
     description:
       "Crispy chicken fingers served with a side of golden fries — a perfect meal for little hands.",
-    category: "For Kiddies",
+    category: "for-kiddies",
     price: {
       currency: "RM",
       standard: {
@@ -293,7 +293,7 @@ export const menu: MenuItem[] = [
     image: "/Images/kids-2.jpg",
     description:
       "Crispy fried fish fillet served with golden fries — simple and tasty for kids.",
-    category: "For Kiddies",
+    category: "for-kiddies",
     price: {
       currency: "RM",
       standard: {
@@ -310,7 +310,7 @@ export const menu: MenuItem[] = [
     image: "/Images/kids-3.jpg",
     description:
       "Creamy pasta with tasty chicken ham - perfectly portioned for little tummies!",
-    category: "For Kiddies",
+    category: "for-kiddies",
     price: {
       currency: "RM",
       standard: {
@@ -330,7 +330,7 @@ export const menu: MenuItem[] = [
     image: "/Images/chicken-1.jpg",
     description:
       "Crispy fried chicken breast part, tender inside — with savoury sauce and served with fries and coleslaw.",
-    category: "Chicken Feast",
+    category: "chicken-feast",
     price: {
       currency: "RM",
       standard: {
@@ -347,7 +347,7 @@ export const menu: MenuItem[] = [
     image: "/Images/chicken-2.jpg",
     description:
       "Crispy on the outside, juicy chicken on the inside, with melted cheese at the center for that perfect bite-sized delight.",
-    category: "Chicken Feast",
+    category: "chicken-feast",
     price: {
       currency: "RM",
       standard: {
@@ -364,7 +364,7 @@ export const menu: MenuItem[] = [
     image: "/Images/chicken-3.jpg",
     description:
       "Juicy grilled chicken thigh served with savoury sauce, crispy fries, and coleslaw.",
-    category: "Chicken Feast",
+    category: "chicken-feast",
     price: {
       currency: "RM",
       standard: {
@@ -381,7 +381,7 @@ export const menu: MenuItem[] = [
     image: "/Images/chicken-4.jpg",
     description:
       "Chicken thigh coated with seasoned flour, fried to crispy perfection, served with salted egg sauce, fries and coleslaw.",
-    category: "Chicken Feast",
+    category: "chicken-feast",
     price: {
       currency: "RM",
       standard: {
@@ -400,7 +400,7 @@ export const menu: MenuItem[] = [
     image: "/Images/specialty-1.jpg",
     description:
       "Tender, juicy Australian lamb shoulder grilled to perfection served with savoury sauce, creamy mashed potato and mixed vegetables.",
-    category: "Today’s Specialty",
+    category: "todays-specialty",
     price: {
       currency: "RM",
       standard: {
@@ -417,7 +417,7 @@ export const menu: MenuItem[] = [
     image: "/Images/specialty-2.jpg",
     description:
       "Tender 200gm New Zealand sirloin steak, grilled to perfection and served with savoury sauce, creamy mashed potato and mixed vegetables.",
-    category: "Today’s Specialty",
+    category: "todays-specialty",
     price: {
       currency: "RM",
       standard: {
@@ -436,7 +436,7 @@ export const menu: MenuItem[] = [
     image: "/Images/burgers-1.jpg",
     description:
       "Juicy beef patty dipped in savory sauce served in a toasted bun, topped with streaky beef, crunchy pickles and fries.",
-    category: "Burgers",
+    category: "burgers",
     price: {
       currency: "RM",
       standard: {
@@ -453,7 +453,7 @@ export const menu: MenuItem[] = [
     image: "/Images/burgers-2.jpg",
     description:
       "Juicy beef patty with melted cheese, served in a toasted bun, topped with streaky beef, crunchy pickles and fries.",
-    category: "Burgers",
+    category: "burgers",
     price: {
       currency: "RM",
       standard: {
@@ -470,7 +470,7 @@ export const menu: MenuItem[] = [
     image: "/Images/burgers-3.jpg",
     description:
       "Chicken thigh coated with seasoned flour, fried to crispy perfection, topped with chicken ham served in a toasted bun and fries.",
-    category: "Burgers",
+    category: "burgers",
     price: {
       currency: "RM",
       standard: {
@@ -489,7 +489,7 @@ export const menu: MenuItem[] = [
     image: "/Images/sea-1.jpg",
     description:
       "Crispy golden breadcrumb-coated fish served with fries, savoury sauce or tartar sauce.",
-    category: "From The Sea",
+    category: "from-the-sea",
     price: {
       currency: "RM",
       standard: {
@@ -506,7 +506,7 @@ export const menu: MenuItem[] = [
     image: "/Images/sea-2.jpg",
     description:
       "Fresh salmon fillet grilled to perfection, and served with creamy garlic sauce, creamy mashed potato and mixed vegetables.",
-    category: "From The Sea",
+    category: "from-the-sea",
     price: {
       currency: "RM",
       standard: {
@@ -524,7 +524,7 @@ export const menu: MenuItem[] = [
     name: "Iced Lemon",
     image: "/Images/beverages-1.jpg",
     description: "Chilled lemon drink — tangy and refreshing.",
-    category: "Beverages",
+    category: "beverages",
     price: {
       currency: "RM",
       standard: {
@@ -540,7 +540,7 @@ export const menu: MenuItem[] = [
     name: "Iced Lemon Tea",
     image: "/Images/beverages-2.jpg",
     description: "Chilled tea with a splash of fresh lemon.",
-    category: "Beverages",
+    category: "beverages",
     price: {
       currency: "RM",
       standard: {
@@ -556,7 +556,7 @@ export const menu: MenuItem[] = [
     name: "Iced Milk Tea",
     image: "/Images/beverages-3.jpg",
     description: "Rich, creamy tea served chilled over ice.",
-    category: "Beverages",
+    category: "beverages",
     price: {
       currency: "RM",
       standard: {
@@ -573,7 +573,7 @@ export const menu: MenuItem[] = [
     image: "/Images/beverages-4.jpg",
     description:
       "A refreshing mix of honey and lemon, served chilled over ice.",
-    category: "Beverages",
+    category: "beverages",
     price: {
       currency: "RM",
       standard: {
@@ -589,7 +589,7 @@ export const menu: MenuItem[] = [
     name: "Iced Chocolate",
     image: "/Images/beverages-5.jpg",
     description: "Rich with creamy chocolate drink, served cold over ice.",
-    category: "Beverages",
+    category: "beverages",
     price: {
       currency: "RM",
       standard: {
@@ -673,7 +673,7 @@ export const menu: MenuItem[] = [
     name: "Americano (Hot)",
     image: "/Images/coffee-hot-1.jpg",
     description: "Bold, aromatic espresso gently blended with hot water.",
-    category: "Coffee",
+    category: "coffee",
     price: {
       currency: "RM",
       standard: {
@@ -690,7 +690,7 @@ export const menu: MenuItem[] = [
     image: "/Images/coffee-hot-2.jpg",
     description:
       "A smooth blend of rich espresso and milk, topped with light and creamy foam, served hot.",
-    category: "Coffee",
+    category: "coffee",
     price: {
       currency: "RM",
       standard: {
@@ -708,7 +708,7 @@ export const menu: MenuItem[] = [
     name: "Americano (Cold)",
     image: "/Images/coffee-cold-1.jpg",
     description: "Bold, aromatic espresso gently blended with ice.",
-    category: "Coffee",
+    category: "coffee",
     price: {
       currency: "RM",
       standard: {
@@ -725,7 +725,7 @@ export const menu: MenuItem[] = [
     image: "/Images/coffee-cold-2.jpg",
     description:
       "A smooth blend of rich espresso and milk, topped with light and creamy foam, served over ice.",
-    category: "Coffee",
+    category: "coffee",
     price: {
       currency: "RM",
       standard: {
@@ -743,7 +743,7 @@ export const menu: MenuItem[] = [
     name: "Hot Lemon",
     image: "/Images/hot-drinks-1.jpg",
     description: "Hot and soothing lemon drink and revitalizing refreshment.",
-    category: "Hot Drinks",
+    category: "hot-drinks",
     price: {
       currency: "RM",
       standard: {
@@ -759,7 +759,7 @@ export const menu: MenuItem[] = [
     name: "Hot Lemon Tea",
     image: "/Images/hot-drinks-2.jpg",
     description: "A soothing blend of tea and fresh lemon, served hot.",
-    category: "Hot Drinks",
+    category: "hot-drinks",
     price: {
       currency: "RM",
       standard: {
@@ -775,7 +775,7 @@ export const menu: MenuItem[] = [
     name: "Hot Milk Tea",
     image: "/Images/hot-drinks-3.jpg",
     description: "Smooth tea blended with milk, served hot and comforting.",
-    category: "Hot Drinks",
+    category: "hot-drinks",
     price: {
       currency: "RM",
       standard: {
@@ -792,7 +792,7 @@ export const menu: MenuItem[] = [
     image: "/Images/hot-drinks-4.jpg",
     description:
       "A warm blend of natural honey and fresh lemon, soothing and comforting.",
-    category: "Hot Drinks",
+    category: "hot-drinks",
     price: {
       currency: "RM",
       standard: {
@@ -808,7 +808,7 @@ export const menu: MenuItem[] = [
     name: "Hot Chocolate",
     image: "/Images/hot-drinks-5.jpg",
     description: "Rich with creamy chocolate drink, served hot and comforting.",
-    category: "Hot Drinks",
+    category: "hot-drinks",
     price: {
       currency: "RM",
       standard: {
@@ -826,7 +826,7 @@ export const menu: MenuItem[] = [
     name: "Vanilla Frappe",
     image: "/Images/frappe-1.jpg",
     description: "A creamy drink with smooth vanilla flavor, served chilled.",
-    category: "Frappe",
+    category: "frappe",
     price: {
       currency: "RM",
       standard: {
@@ -843,7 +843,7 @@ export const menu: MenuItem[] = [
     image: "/Images/frappe-2.jpg",
     description:
       "A refreshing drink with rich chocolate flavor, smooth and creamy.",
-    category: "Frappe",
+    category: "frappe",
     price: {
       currency: "RM",
       standard: {
@@ -860,7 +860,7 @@ export const menu: MenuItem[] = [
     image: "/Images/frappe-3.jpg",
     description:
       "Ice-blended Oreo cookies topped with smooth whipping cream for the perfect cookies-and-cream treat.",
-    category: "Frappe",
+    category: "frappe",
     price: {
       currency: "RM",
       standard: {
@@ -877,7 +877,7 @@ export const menu: MenuItem[] = [
     image: "/Images/frappe-4.jpg",
     description:
       "A creamy ice-blended strawberry frappe with a hint of crème brûlée flavour.",
-    category: "Frappe",
+    category: "frappe",
     price: {
       currency: "RM",
       standard: {
@@ -896,7 +896,7 @@ export const menu: MenuItem[] = [
     image: "/Images/sparkling-1.jpg",
     description:
       "The classic, bold, and refreshing root beer with a smooth, foamy finish.",
-    category: "Sparkling Drinks",
+    category: "sparkling-drinks",
     price: {
       currency: "RM",
       standard: {
@@ -913,7 +913,7 @@ export const menu: MenuItem[] = [
     image: "/Images/sparkling-2.jpg",
     description:
       "Freshly squeezed lemon with a sparkling twist, perfectly sweet and tangy.",
-    category: "Sparkling Drinks",
+    category: "sparkling-drinks",
     price: {
       currency: "RM",
       standard: {
@@ -929,7 +929,7 @@ export const menu: MenuItem[] = [
     name: "Blue Lemonade",
     image: "/Images/sparkling-3.jpg",
     description: "A vibrant blue citrus cooler with refreshing sparkle.",
-    category: "Sparkling Drinks",
+    category: "sparkling-drinks",
     price: {
       currency: "RM",
       standard: {
@@ -946,7 +946,7 @@ export const menu: MenuItem[] = [
     image: "/Images/sparkling-4.jpg",
     description:
       "Classic A&W root beer served over a scoop of creamy vanilla ice cream for a refreshing float.",
-    category: "Sparkling Drinks",
+    category: "sparkling-drinks",
     price: {
       currency: "RM",
       standard: {
@@ -964,7 +964,7 @@ export const menu: MenuItem[] = [
     name: "Coffee Buttercream",
     image: "/Images/buttercream-1.jpg",
     description: "Smooth and creamy buttercream with the rich aroma of coffee.",
-    category: "Buttercream Series",
+    category: "buttercream-series",
     price: {
       currency: "RM",
       standard: {
@@ -981,7 +981,7 @@ export const menu: MenuItem[] = [
     image: "/Images/buttercream-2.jpg",
     description:
       "Rich and creamy chocolate buttercream, perfect for sweetness.",
-    category: "Buttercream Series",
+    category: "buttercream-series",
     price: {
       currency: "RM",
       standard: {
@@ -998,7 +998,7 @@ export const menu: MenuItem[] = [
     image: "/Images/buttercream-3.jpg",
     description:
       "Light and fluffy buttercream with the sweetness of ripe strawberries.",
-    category: "Buttercream Series",
+    category: "buttercream-series",
     price: {
       currency: "RM",
       standard: {
@@ -1017,7 +1017,7 @@ export const menu: MenuItem[] = [
     image: "/Images/desserts-1.jpg",
     description:
       "Rich creamy burnt cheesecake topped with crunchy crumbs for added texture.",
-    category: "Desserts",
+    category: "desserts",
     price: {
       currency: "RM",
       standard: {
@@ -1034,7 +1034,7 @@ export const menu: MenuItem[] = [
     image: "/Images/desserts-2.jpg",
     description:
       "Rich fudgy chocolate brownies served warm with a scoop of creamy vanilla ice cream.",
-    category: "Desserts",
+    category: "desserts",
     price: {
       currency: "RM",
       standard: {
@@ -1052,7 +1052,7 @@ export const menu: MenuItem[] = [
     name: "Black Pepper Sauce",
     image: "/Images/extras-1.jpg",
     description: "Savory black pepper sauce.",
-    category: "Extras",
+    category: "extras",
     price: {
       currency: "RM",
       standard: {
@@ -1068,7 +1068,7 @@ export const menu: MenuItem[] = [
     name: "Rax Sauce",
     image: "/Images/extras-2.jpg",
     description: "Signature Rax dipping sauce.",
-    category: "Extras",
+    category: "extras",
     price: {
       currency: "RM",
       standard: {
@@ -1084,7 +1084,7 @@ export const menu: MenuItem[] = [
     name: "Tartar Sauce",
     image: "/Images/extras-3.jpg",
     description: "Tangy tartar sauce.",
-    category: "Extras",
+    category: "extras",
     price: {
       currency: "RM",
       standard: {
@@ -1100,7 +1100,7 @@ export const menu: MenuItem[] = [
     name: "Garlic Bread (2 pcs)",
     image: "/Images/extras-4.jpg",
     description: "Toasted garlic bread slices.",
-    category: "Extras",
+    category: "extras",
     price: {
       currency: "RM",
       standard: {
