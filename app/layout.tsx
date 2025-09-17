@@ -14,7 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Der' Cabin Bistro | Eat Good, Feel Good",
+  metadataBase: new URL("https://www.dercabinbistro.com"),
+  title: {
+    default: "Der' Cabin Bistro | Eat Good, Feel Good",
+    template: "%s | Der' Cabin Bistro",
+  },
   description:
     "Discover Der' Cabin Bistro — a cozy spot for hearty meals, fresh flavors, and a welcoming atmosphere. Eat good, feel good, and enjoy every bite!",
   keywords: [
@@ -27,13 +31,24 @@ export const metadata: Metadata = {
     "casual dining",
     "family restaurant",
   ],
-  authors: [{ name: "Der' Cabin Bistro" }],
+  authors: [
+    { name: "Der' Cabin Bistro", url: "https://www.dercabinbistro.com" },
+  ],
+  creator: "Der' Cabin Bistro",
+  publisher: "Der' Cabin Bistro",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.dercabinbistro.com",
+    siteName: "Der' Cabin Bistro",
     title: "Der' Cabin Bistro | Eat Good, Feel Good",
     description:
       "Join us at Der' Cabin Bistro for a cozy dining experience filled with hearty meals and warm hospitality.",
-    url: "https://www.dercabinbistro.com",
-    siteName: "Der' Cabin Bistro",
     images: [
       {
         url: "https://www.dercabinbistro.com/Images/banner.png",
@@ -42,18 +57,20 @@ export const metadata: Metadata = {
         alt: "Der' Cabin Bistro interior and delicious meals",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
+    site: "@dercabinbistro",
+    creator: "@dercabinbistro",
     title: "Der' Cabin Bistro | Eat Good, Feel Good",
     description:
       "Cozy vibes, hearty meals, and fresh flavors — that's Der' Cabin Bistro. Eat good, feel good!",
     images: ["https://www.dercabinbistro.com/Images/banner.png"],
-    creator: "@dercabinbistro",
   },
-  metadataBase: new URL("https://www.dercabinbistro.com"),
+  alternates: {
+    canonical: "https://www.dercabinbistro.com",
+  },
+  category: "Restaurant",
   robots: {
     index: true,
     follow: true,
