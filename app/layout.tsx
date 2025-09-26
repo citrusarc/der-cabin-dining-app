@@ -151,7 +151,7 @@ export default function RootLayout({
               },
             ],
             servesCuisine: [
-              "Western f",
+              "Western",
               "Asian Fusion",
               "Bistro Food",
               "Comfort Food",
