@@ -1,6 +1,6 @@
 import { MenuItem } from "@/types";
 
-export const menu: MenuItem[] = [
+export const menus: MenuItem[] = [
   // Starters
   {
     id: "starters-1",

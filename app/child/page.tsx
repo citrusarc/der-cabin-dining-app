@@ -9,12 +9,12 @@ import {
   ArrowUpRight,
   ThumbsUp,
 } from "iconoir-react";
-import { menu } from "@/data/menu";
+import { menus } from "@/data/menu";
 import { MenuCategory, MenuItem } from "@/types";
 import Modal from "@/components/ui/Modal";
 
 export default function ChildHomePage() {
-  const categories = [...new Set(menu.map((item) => item.category))];
+  const categories = [...new Set(menus.map((item) => item.category))];
   const [activeCategory, setActiveCategory] = useState(categories[0]);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
@@ -130,7 +130,7 @@ export default function ChildHomePage() {
         >
           <h2 className="text-xl font-medium text-zinc-400">{category}</h2>
           <div className="flex flex-col gap-4">
-            {menu
+            {menus
               .filter((item) => item.category === category)
               .map((item) => (
                 <div
