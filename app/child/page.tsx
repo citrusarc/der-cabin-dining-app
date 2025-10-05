@@ -3,12 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import {
-  ArrowUp,
-  ArrowUpCircleSolid,
-  ArrowUpRight,
-  ThumbsUp,
-} from "iconoir-react";
+import { ArrowUpCircleSolid, ArrowUpRight, ThumbsUp } from "iconoir-react";
 import { menus } from "@/data/menu";
 import { MenuCategory, MenuItem } from "@/types";
 import Modal from "@/components/ui/Modal";
