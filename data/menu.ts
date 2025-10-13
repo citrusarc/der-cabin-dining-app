@@ -152,6 +152,108 @@ export const menus: MenuItem[] = [
   },
 
   // Mixed Grilled
+  {
+    id: "mixed-grilled-1",
+    name: "Mixed Grilled Lamb + Grilled Chicken",
+    image: "/Images/mixed-grilled-1.jpg",
+    description:
+      "A perfect harmony of juicy grilled lamb and tender chicken, flame-grilled to perfection and served with golden fries, fresh coleslaw, and our signature black pepper sauce.",
+    category: "Mixed Grilled",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "99.99",
+        original: "99.99",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "mixed-grilled-2",
+    name: "Mixed Grilled Salmon + Grilled Chicken",
+    image: "/Images/mixed-grilled-2.jpg",
+    description:
+      "Delicate grilled salmon paired with tender chicken, served hot with golden fries, crisp coleslaw, and our creamy garlic sauce — a delightful balance of flavor and freshness.",
+    category: "Mixed Grilled",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "99.99",
+        original: "99.99",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "mixed-grilled-3",
+    name: "Mixed Grilled Beef + Grilled Chicken",
+    image: "/Images/mixed-grilled-3.jpg",
+    description:
+      "Grilled beef and juicy chicken thigh, chargrilled to smoky perfection and served with golden fries, fresh coleslaw, and our classic black pepper sauce.",
+    category: "Mixed Grilled",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "99.99",
+        original: "99.99",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "mixed-grilled-4",
+    name: "Mixed Grilled Lamb + Grilled Salmon",
+    image: "/Images/mixed-grilled-4.jpg",
+    description:
+      "A luxurious pairing of juicy grilled lamb and tender salmon, served with golden fries, crisp coleslaw, and our signature creamy garlic sauce — indulgence in every bite.",
+    category: "Mixed Grilled",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "99.99",
+        original: "99.99",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "mixed-grilled-5",
+    name: "Mixed Grilled Lamb + Grilled Beef",
+    image: "/Images/mixed-grilled-5.jpg",
+    description:
+      "A bold and flavorful duo of tender grilled lamb and juicy beef, served with golden fries, fresh coleslaw, and our rich black pepper sauce for the ultimate grill experience.",
+    category: "Mixed Grilled",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "99.99",
+        original: "99.99",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "mixed-grilled-6",
+    name: "Mixed Grilled Salmon + Grilled Beef",
+    image: "/Images/mixed-grilled-6.jpg",
+    description:
+      "A refined blend of tender grilled salmon and juicy beef, served with golden fries, fresh coleslaw, and our signature creamy garlic sauce — a true taste of indulgence.",
+    category: "Mixed Grilled",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "99.99",
+        original: "99.99",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
 
   // Chicken Feast
   {
