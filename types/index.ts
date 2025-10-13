@@ -1,20 +1,21 @@
 export type MenuCategory =
-  | "Starters"
-  | "Pasta"
-  | "For Kiddies"
-  | "Chicken Feast"
   | "Today’s Specialty"
-  | "Burgers"
+  | "Starters"
+  | "Mixed Grilled"
+  | "Chicken Feast"
   | "From The Sea"
+  | "Pasta"
+  | "Burgers"
+  | "For Kiddies"
+  | "Extras"
+  | "Desserts"
   | "Beverages"
   | "Fresh Fruit Juices"
-  | "Coffee"
-  | "Hot Drinks"
-  | "Frappe"
   | "Sparkling Drinks"
+  | "Frappe"
   | "Buttercream Series"
-  | "Desserts"
-  | "Extras";
+  | "Coffee"
+  | "Hot Drinks";
 
 export interface MenuPriceDetail {
   current: string;

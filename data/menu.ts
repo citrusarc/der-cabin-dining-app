@@ -1,6 +1,42 @@
 import { MenuItem } from "@/types";
 
 export const menus: MenuItem[] = [
+  // Today’s Specialty
+  {
+    id: "specialty-1",
+    name: "Australian Lamb Shoulder",
+    image: "/Images/specialty-1.jpg",
+    description:
+      "Tender, juicy Australian lamb shoulder grilled to perfection served with savoury sauce, creamy mashed potato and mixed vegetables.",
+    category: "Today’s Specialty",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "28.90",
+        original: "28.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "specialty-2",
+    name: "NZ Sirloin Steak (200gm)",
+    image: "/Images/specialty-2.jpg",
+    description:
+      "Tender 200gm New Zealand sirloin steak, grilled to perfection and served with savoury sauce, creamy mashed potato and mixed vegetables.",
+    category: "Today’s Specialty",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "34.90",
+        original: "34.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+
   // Starters
   {
     id: "starters-1",
@@ -109,6 +145,115 @@ export const menus: MenuItem[] = [
       standard: {
         current: "19.90",
         original: "19.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+
+  // Mixed Grilled
+
+  // Chicken Feast
+  {
+    id: "chicken-1",
+    name: "Cabin Chicken Chop (Chicken Breast Part)",
+    label: "(6pcs)",
+    image: "/Images/chicken-1.jpg",
+    description:
+      "Crispy fried chicken breast part, tender inside — with savoury sauce and served with fries and coleslaw.",
+    category: "Chicken Feast",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "9.90",
+        original: "9.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "chicken-2",
+    name: "Cheesy Chicken Ball",
+    image: "/Images/chicken-2.jpg",
+    description:
+      "Crispy on the outside, juicy chicken on the inside, with melted cheese at the center for that perfect bite-sized delight.",
+    category: "Chicken Feast",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "13.90",
+        original: "13.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "chicken-3",
+    name: "Grilled Chicken Chop (Thigh Part)",
+    image: "/Images/chicken-3.jpg",
+    description:
+      "Juicy grilled chicken thigh served with savoury sauce, crispy fries, and coleslaw.",
+    category: "Chicken Feast",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "14.90",
+        original: "14.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "chicken-4",
+    name: "Salted Egg Chicken (Thigh Part)",
+    image: "/Images/chicken-4.jpg",
+    description:
+      "Chicken thigh coated with seasoned flour, fried to crispy perfection, served with salted egg sauce, fries and coleslaw.",
+    category: "Chicken Feast",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "15.90",
+        original: "15.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+
+  // From The Sea
+  {
+    id: "sea-1",
+    name: "Fish & Chips",
+    image: "/Images/sea-1.jpg",
+    description:
+      "Crispy golden breadcrumb-coated fish served with fries, savoury sauce or tartar sauce.",
+    category: "From The Sea",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "14.90",
+        original: "14.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "sea-2",
+    name: "Salmon (150gm)",
+    image: "/Images/sea-2.jpg",
+    description:
+      "Fresh salmon fillet grilled to perfection, and served with creamy garlic sauce, creamy mashed potato and mixed vegetables.",
+    category: "From The Sea",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "29.90",
+        original: "29.90",
       },
     },
     isDiscount: false,
@@ -269,166 +414,6 @@ export const menus: MenuItem[] = [
     isBestSeller: false,
   },
 
-  // For Kiddies
-  {
-    id: "kids-1",
-    name: "Kid’s Chicken Finger",
-    image: "/Images/kids-1.jpg",
-    description:
-      "Crispy chicken fingers served with a side of golden fries — a perfect meal for little hands.",
-    category: "For Kiddies",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "7.90",
-        original: "7.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "kids-2",
-    name: "Kid’s Fish & Fries",
-    image: "/Images/kids-2.jpg",
-    description:
-      "Crispy fried fish fillet served with golden fries — simple and tasty for kids.",
-    category: "For Kiddies",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "7.90",
-        original: "7.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "kids-3",
-    name: "Kid’s Cabonara Pasta",
-    image: "/Images/kids-3.jpg",
-    description:
-      "Creamy pasta with tasty chicken ham - perfectly portioned for little tummies!",
-    category: "For Kiddies",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "7.90",
-        original: "7.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-
-  // Chicken Feast
-  {
-    id: "chicken-1",
-    name: "Cabin Chicken Chop (Chicken Breast Part)",
-    label: "(6pcs)",
-    image: "/Images/chicken-1.jpg",
-    description:
-      "Crispy fried chicken breast part, tender inside — with savoury sauce and served with fries and coleslaw.",
-    category: "Chicken Feast",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "9.90",
-        original: "9.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "chicken-2",
-    name: "Cheesy Chicken Ball",
-    image: "/Images/chicken-2.jpg",
-    description:
-      "Crispy on the outside, juicy chicken on the inside, with melted cheese at the center for that perfect bite-sized delight.",
-    category: "Chicken Feast",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "13.90",
-        original: "13.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "chicken-3",
-    name: "Grilled Chicken Chop (Thigh Part)",
-    image: "/Images/chicken-3.jpg",
-    description:
-      "Juicy grilled chicken thigh served with savoury sauce, crispy fries, and coleslaw.",
-    category: "Chicken Feast",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "14.90",
-        original: "14.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "chicken-4",
-    name: "Salted Egg Chicken (Thigh Part)",
-    image: "/Images/chicken-4.jpg",
-    description:
-      "Chicken thigh coated with seasoned flour, fried to crispy perfection, served with salted egg sauce, fries and coleslaw.",
-    category: "Chicken Feast",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "15.90",
-        original: "15.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-
-  // Today’s Specialty
-  {
-    id: "specialty-1",
-    name: "Australian Lamb Shoulder",
-    image: "/Images/specialty-1.jpg",
-    description:
-      "Tender, juicy Australian lamb shoulder grilled to perfection served with savoury sauce, creamy mashed potato and mixed vegetables.",
-    category: "Today’s Specialty",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "28.90",
-        original: "28.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "specialty-2",
-    name: "NZ Sirloin Steak (200gm)",
-    image: "/Images/specialty-2.jpg",
-    description:
-      "Tender 200gm New Zealand sirloin steak, grilled to perfection and served with savoury sauce, creamy mashed potato and mixed vegetables.",
-    category: "Today’s Specialty",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "34.90",
-        original: "34.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-
   // Burgers
   {
     id: "burgers-1",
@@ -482,36 +467,155 @@ export const menus: MenuItem[] = [
     isBestSeller: false,
   },
 
-  // From The Sea
+  // For Kiddies
   {
-    id: "sea-1",
-    name: "Fish & Chips",
-    image: "/Images/sea-1.jpg",
+    id: "kids-1",
+    name: "Kid’s Chicken Finger",
+    image: "/Images/kids-1.jpg",
     description:
-      "Crispy golden breadcrumb-coated fish served with fries, savoury sauce or tartar sauce.",
-    category: "From The Sea",
+      "Crispy chicken fingers served with a side of golden fries — a perfect meal for little hands.",
+    category: "For Kiddies",
     price: {
       currency: "RM",
       standard: {
-        current: "14.90",
-        original: "14.90",
+        current: "7.90",
+        original: "7.90",
       },
     },
     isDiscount: false,
     isBestSeller: false,
   },
   {
-    id: "sea-2",
-    name: "Salmon (150gm)",
-    image: "/Images/sea-2.jpg",
+    id: "kids-2",
+    name: "Kid’s Fish & Fries",
+    image: "/Images/kids-2.jpg",
     description:
-      "Fresh salmon fillet grilled to perfection, and served with creamy garlic sauce, creamy mashed potato and mixed vegetables.",
-    category: "From The Sea",
+      "Crispy fried fish fillet served with golden fries — simple and tasty for kids.",
+    category: "For Kiddies",
     price: {
       currency: "RM",
       standard: {
-        current: "29.90",
-        original: "29.90",
+        current: "7.90",
+        original: "7.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "kids-3",
+    name: "Kid’s Cabonara Pasta",
+    image: "/Images/kids-3.jpg",
+    description:
+      "Creamy pasta with tasty chicken ham - perfectly portioned for little tummies!",
+    category: "For Kiddies",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "7.90",
+        original: "7.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+
+  // Extras
+  {
+    id: "extras-1",
+    name: "Black Pepper Sauce",
+    image: "/Images/extras-1.jpg",
+    description: "Savory black pepper sauce.",
+    category: "Extras",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "1.00",
+        original: "1.00",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "extras-2",
+    name: "Rax Sauce",
+    image: "/Images/extras-2.jpg",
+    description: "Signature Rax dipping sauce.",
+    category: "Extras",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "1.00",
+        original: "1.00",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "extras-3",
+    name: "Tartar Sauce",
+    image: "/Images/extras-3.jpg",
+    description: "Tangy tartar sauce.",
+    category: "Extras",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "1.00",
+        original: "1.00",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "extras-4",
+    name: "Garlic Bread (2 pcs)",
+    image: "/Images/extras-4.jpg",
+    description: "Toasted garlic bread slices.",
+    category: "Extras",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "3.00",
+        original: "3.00",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+
+  // Desserts
+  {
+    id: "desserts-1",
+    name: "Burnt Cheesecake",
+    image: "/Images/desserts-1.jpg",
+    description:
+      "Rich creamy burnt cheesecake topped with crunchy crumbs for added texture.",
+    category: "Desserts",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "8.90",
+        original: "8.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "desserts-2",
+    name: "Chocolate Brownies",
+    image: "/Images/desserts-2.jpg",
+    description:
+      "Rich fudgy chocolate brownies served warm with a scoop of creamy vanilla ice cream.",
+    category: "Desserts",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "10.90",
+        original: "10.90",
       },
     },
     isDiscount: false,
@@ -656,6 +760,196 @@ export const menus: MenuItem[] = [
     image: "/Images/juices-4.jpg",
     description: "Healthy blend of apple and celery juice.",
     category: "Fresh Fruit Juices",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "9.90",
+        original: "9.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+
+  // Sparkling Drinks
+  {
+    id: "sparkling-1",
+    name: "A&W Root Beer",
+    image: "/Images/sparkling-1.jpg",
+    description:
+      "The classic, bold, and refreshing root beer with a smooth, foamy finish.",
+    category: "Sparkling Drinks",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "4.50",
+        original: "4.50",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "sparkling-2",
+    name: "Lemonade",
+    image: "/Images/sparkling-2.jpg",
+    description:
+      "Freshly squeezed lemon with a sparkling twist, perfectly sweet and tangy.",
+    category: "Sparkling Drinks",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "5.50",
+        original: "5.50",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "sparkling-3",
+    name: "Blue Lemonade",
+    image: "/Images/sparkling-3.jpg",
+    description: "A vibrant blue citrus cooler with refreshing sparkle.",
+    category: "Sparkling Drinks",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "5.50",
+        original: "5.50",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "sparkling-4",
+    name: "A&W Root Beer Float",
+    image: "/Images/sparkling-4.jpg",
+    description:
+      "Classic A&W root beer served over a scoop of creamy vanilla ice cream for a refreshing float.",
+    category: "Sparkling Drinks",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "8.90",
+        original: "8.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+
+  // Frappe
+  {
+    id: "frappe-1",
+    name: "Vanilla Frappe",
+    image: "/Images/frappe-1.jpg",
+    description: "A creamy drink with smooth vanilla flavor, served chilled.",
+    category: "Frappe",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "9.90",
+        original: "9.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "frappe-2",
+    name: "Chocolate Frappe",
+    image: "/Images/frappe-2.jpg",
+    description:
+      "A refreshing drink with rich chocolate flavor, smooth and creamy.",
+    category: "Frappe",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "11.90",
+        original: "11.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "frappe-3",
+    name: "Oreo Frappe",
+    image: "/Images/frappe-3.jpg",
+    description:
+      "Ice-blended Oreo cookies topped with smooth whipping cream for the perfect cookies-and-cream treat.",
+    category: "Frappe",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "11.90",
+        original: "11.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "frappe-4",
+    name: "Strawberry Creme Brulee",
+    image: "/Images/frappe-4.jpg",
+    description:
+      "A creamy ice-blended strawberry frappe with a hint of crème brûlée flavour.",
+    category: "Frappe",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "12.90",
+        original: "12.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+
+  // Buttercream Series
+  {
+    id: "buttercream-1",
+    name: "Coffee Buttercream",
+    image: "/Images/buttercream-1.jpg",
+    description: "Smooth and creamy buttercream with the rich aroma of coffee.",
+    category: "Buttercream Series",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "9.90",
+        original: "9.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "buttercream-2",
+    name: "Chocolate Buttercream",
+    image: "/Images/buttercream-2.jpg",
+    description:
+      "Rich and creamy chocolate buttercream, perfect for sweetness.",
+    category: "Buttercream Series",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "9.90",
+        original: "9.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "buttercream-3",
+    name: "Strawberry Buttercream",
+    image: "/Images/buttercream-3.jpg",
+    description:
+      "Light and fluffy buttercream with the sweetness of ripe strawberries.",
+    category: "Buttercream Series",
     price: {
       currency: "RM",
       standard: {
@@ -814,298 +1108,6 @@ export const menus: MenuItem[] = [
       standard: {
         current: "7.90",
         original: "7.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-
-  // Frappe
-  {
-    id: "frappe-1",
-    name: "Vanilla Frappe",
-    image: "/Images/frappe-1.jpg",
-    description: "A creamy drink with smooth vanilla flavor, served chilled.",
-    category: "Frappe",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "9.90",
-        original: "9.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "frappe-2",
-    name: "Chocolate Frappe",
-    image: "/Images/frappe-2.jpg",
-    description:
-      "A refreshing drink with rich chocolate flavor, smooth and creamy.",
-    category: "Frappe",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "11.90",
-        original: "11.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "frappe-3",
-    name: "Oreo Frappe",
-    image: "/Images/frappe-3.jpg",
-    description:
-      "Ice-blended Oreo cookies topped with smooth whipping cream for the perfect cookies-and-cream treat.",
-    category: "Frappe",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "11.90",
-        original: "11.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "frappe-4",
-    name: "Strawberry Creme Brulee",
-    image: "/Images/frappe-4.jpg",
-    description:
-      "A creamy ice-blended strawberry frappe with a hint of crème brûlée flavour.",
-    category: "Frappe",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "12.90",
-        original: "12.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-
-  // Sparkling Drinks
-  {
-    id: "sparkling-1",
-    name: "A&W Root Beer",
-    image: "/Images/sparkling-1.jpg",
-    description:
-      "The classic, bold, and refreshing root beer with a smooth, foamy finish.",
-    category: "Sparkling Drinks",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "4.50",
-        original: "4.50",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "sparkling-2",
-    name: "Lemonade",
-    image: "/Images/sparkling-2.jpg",
-    description:
-      "Freshly squeezed lemon with a sparkling twist, perfectly sweet and tangy.",
-    category: "Sparkling Drinks",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "5.50",
-        original: "5.50",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "sparkling-3",
-    name: "Blue Lemonade",
-    image: "/Images/sparkling-3.jpg",
-    description: "A vibrant blue citrus cooler with refreshing sparkle.",
-    category: "Sparkling Drinks",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "5.50",
-        original: "5.50",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "sparkling-4",
-    name: "A&W Root Beer Float",
-    image: "/Images/sparkling-4.jpg",
-    description:
-      "Classic A&W root beer served over a scoop of creamy vanilla ice cream for a refreshing float.",
-    category: "Sparkling Drinks",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "8.90",
-        original: "8.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-
-  // Buttercream Series
-  {
-    id: "buttercream-1",
-    name: "Coffee Buttercream",
-    image: "/Images/buttercream-1.jpg",
-    description: "Smooth and creamy buttercream with the rich aroma of coffee.",
-    category: "Buttercream Series",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "9.90",
-        original: "9.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "buttercream-2",
-    name: "Chocolate Buttercream",
-    image: "/Images/buttercream-2.jpg",
-    description:
-      "Rich and creamy chocolate buttercream, perfect for sweetness.",
-    category: "Buttercream Series",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "9.90",
-        original: "9.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "buttercream-3",
-    name: "Strawberry Buttercream",
-    image: "/Images/buttercream-3.jpg",
-    description:
-      "Light and fluffy buttercream with the sweetness of ripe strawberries.",
-    category: "Buttercream Series",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "9.90",
-        original: "9.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-
-  // Desserts
-  {
-    id: "desserts-1",
-    name: "Burnt Cheesecake",
-    image: "/Images/desserts-1.jpg",
-    description:
-      "Rich creamy burnt cheesecake topped with crunchy crumbs for added texture.",
-    category: "Desserts",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "8.90",
-        original: "8.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "desserts-2",
-    name: "Chocolate Brownies",
-    image: "/Images/desserts-2.jpg",
-    description:
-      "Rich fudgy chocolate brownies served warm with a scoop of creamy vanilla ice cream.",
-    category: "Desserts",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "10.90",
-        original: "10.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-
-  // Extras
-  {
-    id: "extras-1",
-    name: "Black Pepper Sauce",
-    image: "/Images/extras-1.jpg",
-    description: "Savory black pepper sauce.",
-    category: "Extras",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "1.00",
-        original: "1.00",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "extras-2",
-    name: "Rax Sauce",
-    image: "/Images/extras-2.jpg",
-    description: "Signature Rax dipping sauce.",
-    category: "Extras",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "1.00",
-        original: "1.00",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "extras-3",
-    name: "Tartar Sauce",
-    image: "/Images/extras-3.jpg",
-    description: "Tangy tartar sauce.",
-    category: "Extras",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "1.00",
-        original: "1.00",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "extras-4",
-    name: "Garlic Bread (2 pcs)",
-    image: "/Images/extras-4.jpg",
-    description: "Toasted garlic bread slices.",
-    category: "Extras",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "3.00",
-        original: "3.00",
       },
     },
     isDiscount: false,
