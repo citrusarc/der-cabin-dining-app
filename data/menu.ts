@@ -276,8 +276,26 @@ export const menus: MenuItem[] = [
   },
   {
     id: "chicken-2",
-    name: "Grilled Chicken Chop (Thigh Part)",
+    name: "XXL Chicken Chop",
+    label: "(6pcs, 540g)",
     image: "/Images/chicken-2.jpg",
+    description:
+      "Chicken chop fried to crispy perfection with juicy tender meat inside, served in XXL size for a truly satisfying meal.",
+    category: "Chicken Feast",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "16.90",
+        original: "16.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "chicken-3",
+    name: "Grilled Chicken Chop (Thigh Part)",
+    image: "/Images/chicken-3.jpg",
     description:
       "Juicy grilled chicken thigh served with savoury sauce, crispy fries, and coleslaw.",
     category: "Chicken Feast",
@@ -292,29 +310,11 @@ export const menus: MenuItem[] = [
     isBestSeller: false,
   },
   {
-    id: "chicken-3",
-    name: "Salted Egg Chicken Chop (Thigh Part)",
-    image: "/Images/chicken-3.jpg",
-    description:
-      "Chicken thigh coated with seasoned flour, fried to crispy perfection, served with salted egg sauce, fries and coleslaw.",
-    category: "Chicken Feast",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "16.90",
-        original: "16.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
     id: "chicken-4",
-    name: "XXL Chicken Chop",
-    label: "(6pcs, 540g)",
+    name: "Salted Egg Chicken Chop (Thigh Part)",
     image: "/Images/chicken-4.jpg",
     description:
-      "Chicken chop fried to crispy perfection with juicy tender meat inside, served in XXL size for a truly satisfying meal.",
+      "Chicken thigh coated with seasoned flour, fried to crispy perfection, served with salted egg sauce, fries and coleslaw.",
     category: "Chicken Feast",
     price: {
       currency: "RM",
