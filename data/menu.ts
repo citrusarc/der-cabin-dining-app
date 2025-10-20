@@ -311,9 +311,10 @@ export const menus: MenuItem[] = [
   {
     id: "chicken-4",
     name: "XXL Chicken Chop",
+    label: "(6pcs, 540g)",
     image: "/Images/chicken-4.jpg",
     description:
-      "Crispy XXL Chicken Chop, served in 6 pieces (540 g). Juicy on the inside, golden and crunchy on the outside",
+      "Chicken chop fried to crispy perfection with juicy tender meat inside, served in XXL size for a truly satisfying meal.",
     category: "Chicken Feast",
     price: {
       currency: "RM",
