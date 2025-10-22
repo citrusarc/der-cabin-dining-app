@@ -161,7 +161,7 @@ export default function ChildHomePage() {
                           </span>
                         )}
                       </h2>
-                      <p className="text-sm text-zinc-400">
+                      <p className="whitespace-pre-line text-sm text-zinc-400">
                         {item.description}
                       </p>
                     </div>
@@ -250,7 +250,7 @@ export default function ChildHomePage() {
                     </span>
                   )}
                 </h2>
-                <p className="text-sm text-zinc-400">
+                <p className="whitespace-pre-line text-sm text-zinc-400">
                   {selectedItem.description}
                 </p>
               </div>

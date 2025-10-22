@@ -6,14 +6,15 @@ export const menus: MenuItem[] = [
     id: "specialty-1",
     name: "Australian Lamb Shoulder",
     image: "/Images/specialty-1.jpg",
-    description:
-      "Tender lamb shoulder grilled to perfection, served with your choice of fries & coleslaw or fries & mix vegetables, complemented with our signature black pepper sauce.",
+    description: `Enjoy 2 pieces of premium Australian lamb shoulder, weighing between 280–300 grams in total. Expertly grilled to tender perfection, offering a juicy and flavorful bite in every piece. Served with rich black pepper sauce and your choice of side:\n
+      - Fries with coleslaw
+      - Fries with mixed vegetables`,
     category: "Today’s Specialty",
     price: {
       currency: "RM",
       standard: {
-        current: "28.90",
-        original: "28.90",
+        current: "29.90",
+        original: "29.90",
       },
     },
     isDiscount: false,
@@ -23,8 +24,9 @@ export const menus: MenuItem[] = [
     id: "specialty-2",
     name: "NZ Sirloin Steak (200gm)",
     image: "/Images/specialty-2.jpg",
-    description:
-      "Tender 200gm New Zealand sirloin steak, grilled to perfection and served with savoury sauce, creamy mashed potato and mixed vegetables.",
+    description: `Premium New Zealand sirloin steak, perfectly grilled to your preferred doneness and served with rich black pepper sauce. Accompanied by your choice of side:\n
+      - Mashed potato with coleslaw
+      - Mashed potato with mixed vegetables`,
     category: "Today’s Specialty",
     price: {
       currency: "RM",
@@ -54,13 +56,13 @@ export const menus: MenuItem[] = [
     name: "Onion Ring",
     image: "/Images/starters-2.jpg",
     description:
-      "Thick-cut onions coated in a crunchy golden batter, fried to perfection and served hot.",
+      "Thick-cut onion rings coated in a crispy golden batter, perfectly fried and served hot with rich marinara sauce for the perfect bite.",
     category: "Starters",
     price: {
       currency: "RM",
       standard: {
-        current: "7.90",
-        original: "7.90",
+        current: "8.90",
+        original: "8.90",
       },
     },
     isDiscount: false,
@@ -68,10 +70,10 @@ export const menus: MenuItem[] = [
   },
   {
     id: "starters-3",
-    name: "Mash Potatoes",
+    name: "Creamed Mash Potatoes",
     image: "/Images/starters-3.jpg",
     description:
-      "Creamy, buttery mashed potatoes, whipped smooth and seasoned to comforting perfection.",
+      "Smooth and buttery mashed potatoes whipped to a creamy texture, served warm with rich and flavorful Rax sauce for the perfect comforting side dish.",
     category: "Starters",
     price: {
       currency: "RM",
@@ -88,13 +90,13 @@ export const menus: MenuItem[] = [
     name: "Homemade Mushroom Soup",
     image: "/Images/starters-4.jpg",
     description:
-      "Creamy homemade mushroom soup served with crispy toast bread — warm, rich, and comforting.",
+      "Rich and creamy mushroom soup made from fresh mushrooms, slow-cooked to bring out their earthy flavor. Served warm with a slice of toasted bread for the perfect comforting start to your meal.",
     category: "Starters",
     price: {
       currency: "RM",
       standard: {
-        current: "7.90",
-        original: "7.90",
+        current: "8.90",
+        original: "8.90",
       },
     },
     isDiscount: false,
@@ -105,13 +107,13 @@ export const menus: MenuItem[] = [
     name: "Mozzarella Sticks",
     image: "/Images/starters-5.jpg",
     description:
-      "Breaded sticks of mozzarella cheese, fried until golden and served with brown sauce.",
+      "Enjoy 5 pieces of crispy, golden-fried mozzarella sticks. Crunchy on the outside and perfectly gooey inside. Served hot with your choice of dipping sauce.",
     category: "Starters",
     price: {
       currency: "RM",
       standard: {
-        current: "8.90",
-        original: "8.90",
+        current: "10.90",
+        original: "10.90",
       },
     },
     isDiscount: false,
@@ -127,8 +129,8 @@ export const menus: MenuItem[] = [
     price: {
       currency: "RM",
       standard: {
-        current: "12.90",
-        original: "12.90",
+        current: "14.90",
+        original: "14.90",
       },
     },
     isDiscount: false,
@@ -154,8 +156,25 @@ export const menus: MenuItem[] = [
   // Mixed Grilled
   {
     id: "mixed-grilled-1",
-    name: "Mixed Grilled Beef + Grilled Chicken",
+    name: "Lamb + Grilled Chicken",
     image: "/Images/mixed-grilled-1.jpg",
+    description:
+      "A perfect duo of juicy grilled lamb and tender chicken, served with your choice of fries & coleslaw or fries & mix vegetables, and paired with two sauces - our signature black pepper sauce and one sauce of your choice.",
+    category: "Mixed Grilled",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "39.90",
+        original: "39.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "mixed-grilled-2",
+    name: "Beef + Grilled Chicken",
+    image: "/Images/mixed-grilled-2.jpg",
     description:
       "Savory juicy beef paired with grilled chicken, served with your choice of fries & coleslaw or fries & mix vegetables, and accompanied by two sauces — black pepper and one of your choice.",
     category: "Mixed Grilled",
@@ -164,23 +183,6 @@ export const menus: MenuItem[] = [
       standard: {
         current: "44.90",
         original: "44.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
-    id: "mixed-grilled-2",
-    name: "Mixed Grilled Lamb + Grilled Chicken",
-    image: "/Images/mixed-grilled-2.jpg",
-    description:
-      "A perfect duo of juicy grilled lamb and tender chicken, served with your choice of fries & coleslaw or fries & mix vegetables, and paired with two sauces — our signature black pepper sauce and one sauce of your choice.",
-    category: "Mixed Grilled",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "39.90",
-        original: "39.90",
       },
     },
     isDiscount: false,
@@ -258,17 +260,17 @@ export const menus: MenuItem[] = [
   // Chicken Feast
   {
     id: "chicken-1",
-    name: "XL Chicken Chop",
+    name: "Cabin Chicken Chop (Chicken Breast Part) ",
     label: "(3pcs, 220g)",
     image: "/Images/chicken-1.jpg",
     description:
-      "Crispy breaded chicken chop, deep-fried to golden perfection and served with fresh coleslaw, golden fries, and our signature black pepper sauce.",
+      "Enjoy 3 pieces of tender chicken breast coated with crispy breadcrumbs and deep-fried to golden perfection. Served with rich black pepper sauce, accompanied by fries and coleslaw for a hearty and satisfying meal.",
     category: "Chicken Feast",
     price: {
       currency: "RM",
       standard: {
-        current: "9.90",
-        original: "9.90",
+        current: "10.90",
+        original: "10.90",
       },
     },
     isDiscount: false,
@@ -276,11 +278,11 @@ export const menus: MenuItem[] = [
   },
   {
     id: "chicken-2",
-    name: "XXL Chicken Chop",
-    label: "(6pcs, 540g)",
+    name: "XXL Cabin Chicken Chop",
+    label: "(6pcs, 520g)",
     image: "/Images/chicken-2.jpg",
     description:
-      "Extra-large breaded chicken chop, deep-fried to golden perfection and served with fresh coleslaw, golden fries, and our signature black pepper sauce.",
+      "Enjoy 6 pieces of tender chicken breast coated with crispy breadcrumbs and deep-fried to golden perfection. Served with rich black pepper sauce, accompanied by fries and coleslaw for an extra hearty and satisfying meal.",
     category: "Chicken Feast",
     price: {
       currency: "RM",
@@ -295,16 +297,15 @@ export const menus: MenuItem[] = [
   {
     id: "chicken-3",
     name: "Mushroom Chicken Mushroom",
-    label: "(360g)",
     image: "/Images/chicken-3.jpg",
     description:
-      "Crispy breaded chicken topped with creamy mushroom sauce and melted mozzarella cheese, served with golden fries and fresh coleslaw.",
+      "Juicy chicken breast coated with crispy breadcrumbs, topped with creamy mushroom sauce and melted mozzarella cheese. Served with fries and coleslaw for a rich, flavorful, and satisfying meal.",
     category: "Chicken Feast",
     price: {
       currency: "RM",
       standard: {
-        current: "15.90",
-        original: "15.90",
+        current: "14.90",
+        original: "14.90",
       },
     },
     isDiscount: false,
@@ -329,16 +330,16 @@ export const menus: MenuItem[] = [
   },
   {
     id: "chicken-5",
-    name: "Salted Egg Chicken Chop (Thigh Part)",
+    name: "Salted Egg Chicken (Thigh Part)",
     image: "/Images/chicken-5.jpg",
     description:
-      "Chicken thigh coated with seasoned flour, fried to crispy perfection, served with salted egg sauce, fries and coleslaw.",
+      "Chicken thigh coated with seasoned flour, fried to crispy perfection, serve with salted egg sauce, fries and coleslaw.",
     category: "Chicken Feast",
     price: {
       currency: "RM",
       standard: {
-        current: "16.90",
-        original: "16.90",
+        current: "17.90",
+        original: "17.90",
       },
     },
     isDiscount: false,
@@ -368,7 +369,7 @@ export const menus: MenuItem[] = [
     name: "Fish & Chips",
     image: "/Images/sea-1.jpg",
     description:
-      "Crispy golden breadcrumb-coated fish served with fries, savoury sauce or tartar sauce.",
+      "Crispy golden breadcrumbs fish served with fries, savoury sauce or tartar sauce.",
     category: "From The Sea",
     price: {
       currency: "RM",
@@ -385,7 +386,7 @@ export const menus: MenuItem[] = [
     name: "Salmon (150gm)",
     image: "/Images/sea-2.jpg",
     description:
-      "Fresh salmon fillet grilled to perfection, and served with creamy garlic sauce, creamy mashed potato and mixed vegetables.",
+      "Enjoy a 150-gram fillet of fresh  salmon, grilled to perfection with crispy skin and tender, flaky flesh. Served with creamy garlic sauce.",
     category: "From The Sea",
     price: {
       currency: "RM",
@@ -401,16 +402,16 @@ export const menus: MenuItem[] = [
   // Pasta
   {
     id: "pasta-1",
-    name: "Aglio E Olio with Grilled Chicken",
+    name: "Veggie Pasta Aglio Olio",
     image: "/Images/pasta-1.jpg",
     description:
-      "Spaghetti sautéed with garlic, chili flakes, and topped with tender and juicy grilled chicken thigh.",
+      "A delightful blend of al dente pasta tossed with fresh sautéed vegetables in a light, flavorful sauce. Perfectly seasoned for a wholesome and satisfying vegetarian meal.",
     category: "Pasta",
     price: {
       currency: "RM",
       standard: {
-        current: "19.90",
-        original: "19.90",
+        current: "15.90",
+        original: "15.90",
       },
     },
     isDiscount: false,
@@ -418,10 +419,10 @@ export const menus: MenuItem[] = [
   },
   {
     id: "pasta-2",
-    name: "Aglio E Olio with Seafood",
+    name: "Aglio with Grilled Chicken  ",
     image: "/Images/pasta-2.jpg",
     description:
-      "Spaghetti sauteed with garlic, chili flakes and served with a medley of fresh seafood.",
+      "Pasta sauteed with garlic, chili flakes, and topped with tender and juicy grilled chicken thigh.",
     category: "Pasta",
     price: {
       currency: "RM",
@@ -435,16 +436,16 @@ export const menus: MenuItem[] = [
   },
   {
     id: "pasta-3",
-    name: "Alfredo with Grilled Chicken",
+    name: "Aglio with Seafood ",
     image: "/Images/pasta-3.jpg",
     description:
-      "Rich, creamy alfredo sauce coats every strand of pasta, topped with juicy, perfectly grilled chicken.",
+      "A classic Italian-style pasta tossed with garlic and olive oil, featuring juicy prawns and tender squid. Light, aromatic, and perfectly balanced for seafood lovers.",
     category: "Pasta",
     price: {
       currency: "RM",
       standard: {
-        current: "19.90",
-        original: "19.90",
+        current: "22.90",
+        original: "22.90",
       },
     },
     isDiscount: false,
@@ -452,10 +453,10 @@ export const menus: MenuItem[] = [
   },
   {
     id: "pasta-4",
-    name: "Chili, Garlic Shrimp Pasta",
+    name: "Alfredo with Grilled Chicken",
     image: "/Images/pasta-4.jpg",
     description:
-      "Spaghetti tossed with garlic, chili flakes, and served with juicy shrimp.",
+      "Rich, Creamy Alfredo sauce coats every strand of pasta, topped with juicy, perfectly grilled chicken.",
     category: "Pasta",
     price: {
       currency: "RM",
@@ -469,8 +470,25 @@ export const menus: MenuItem[] = [
   },
   {
     id: "pasta-5",
-    name: "Salted Egg Chic Pasta (Chicken Thigh)",
+    name: "Chilli, Garlic Shrimp Pasta",
     image: "/Images/pasta-5.jpg",
+    description:
+      "Pasta tossed with garlic, chili flakes, and served with juicy shrimp.",
+    category: "Pasta",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "19.90",
+        original: "19.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "pasta-6",
+    name: "Salted Egg Chic Pasta (Chicken Thigh)",
+    image: "/Images/pasta-6.jpg",
     description:
       "Creamy, savory salted egg sauce coats every strand of pasta, topped with juicy and flavorful chicken thigh.",
     category: "Pasta",
@@ -485,27 +503,11 @@ export const menus: MenuItem[] = [
     isBestSeller: false,
   },
   {
-    id: "pasta-6",
-    name: "Salted Egg Seafood Pasta",
-    image: "/Images/pasta-6.jpg",
-    description:
-      "Creamy, savory salted egg sauce coats every strand of pasta, served with succulent prawns and tender squid.",
-    category: "Pasta",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "19.90",
-        original: "19.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
-  {
     id: "pasta-7",
-    name: "Meatball Pasta",
+    name: "Salted Egg Shrimp Pasta",
     image: "/Images/pasta-7.jpg",
-    description: "Spaghetti served with beef meatballs in rich tomato sauce.",
+    description:
+      "Creamy and savory salted egg sauce coats every strand of pasta, topped with juicy shrimp for a rich, flavorful, and indulgent pasta experience.",
     category: "Pasta",
     price: {
       currency: "RM",
@@ -519,8 +521,24 @@ export const menus: MenuItem[] = [
   },
   {
     id: "pasta-8",
-    name: "Mac ‘N’ Cheese (Chicken Thigh)",
+    name: "Meatball Pasta",
     image: "/Images/pasta-8.jpg",
+    description: "Pasta served with beef meatballs in rich tomato sauce.",
+    category: "Pasta",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "18.90",
+        original: "18.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "pasta-9",
+    name: "Mac ‘N’ Cheese (Chicken Thigh)",
+    image: "/Images/pasta-9.jpg",
     description:
       "Creamy macaroni and cheese topped with tender, juicy chicken thigh pieces.",
     category: "Pasta",
@@ -535,9 +553,9 @@ export const menus: MenuItem[] = [
     isBestSeller: false,
   },
   {
-    id: "pasta-9",
+    id: "pasta-10",
     name: "Mac ‘N’ Cheese (Shrimp)",
-    image: "/Images/pasta-9.jpg",
+    image: "/Images/pasta-10.jpg",
     description:
       "Creamy macaroni and cheese topped with tender, succulent shrimp.",
     category: "Pasta",
@@ -555,16 +573,16 @@ export const menus: MenuItem[] = [
   // Burgers
   {
     id: "burgers-1",
-    name: "Burger (Beef)",
+    name: "Cheese Burger (Beef)",
     image: "/Images/burgers-1.jpg",
     description:
-      "Juicy beef patty dipped in savory sauce served in a toasted bun, topped with streaky beef, crunchy pickles and fries.",
+      "Juicy beef patty with melted cheese, served in a toasted bun, topped with streaky beef, crunchy pickles and fries.",
     category: "Burgers",
     price: {
       currency: "RM",
       standard: {
-        current: "15.90",
-        original: "15.90",
+        current: "19.90",
+        original: "19.90",
       },
     },
     isDiscount: false,
@@ -572,16 +590,16 @@ export const menus: MenuItem[] = [
   },
   {
     id: "burgers-2",
-    name: "Cheese Burger (Beef)",
+    name: "Crispy Chicken Burger",
     image: "/Images/burgers-2.jpg",
     description:
-      "Juicy beef patty with melted cheese, served in a toasted bun, topped with streaky beef, crunchy pickles and fries.",
+      "Chicken thigh coated with seasoned flour, fried to crispy perfection, topped with chicken ham served in a toasted bun and fries.",
     category: "Burgers",
     price: {
       currency: "RM",
       standard: {
-        current: "16.90",
-        original: "16.90",
+        current: "19.90",
+        original: "19.90",
       },
     },
     isDiscount: false,
@@ -589,16 +607,16 @@ export const menus: MenuItem[] = [
   },
   {
     id: "burgers-3",
-    name: "Crispy Chicken Burger",
+    name: "Crispy Fish Burger",
     image: "/Images/burgers-3.jpg",
     description:
-      "Chicken thigh coated with seasoned flour, fried to crispy perfection, topped with chicken ham served in a toasted bun and fries.",
+      "Crispy, golden-fried fish fillet layered with fresh lettuce, tomato, and tartar sauce, served in a soft toasted bun for a deliciously crunchy and satisfying bite.",
     category: "Burgers",
     price: {
       currency: "RM",
       standard: {
-        current: "17.90",
-        original: "17.90",
+        current: "19.90",
+        original: "19.90",
       },
     },
     isDiscount: false,
@@ -611,7 +629,7 @@ export const menus: MenuItem[] = [
     name: "Kid’s Chicken Finger",
     image: "/Images/kids-1.jpg",
     description:
-      "Crispy chicken fingers served with a side of golden fries — a perfect meal for little hands.",
+      "Crispy chicken fingers served with a side of golden fries – a perfect meal for little hands.",
     category: "For Kiddies",
     price: {
       currency: "RM",
@@ -645,13 +663,13 @@ export const menus: MenuItem[] = [
     name: "Kid’s Alfredo Pasta",
     image: "/Images/kids-3.jpg",
     description:
-      "Creamy pasta with tasty chicken ham - perfectly portioned for little tummies!",
+      "Creamy pasta with tasty chicken ham – perfectly portioned for little tummies!",
     category: "For Kiddies",
     price: {
       currency: "RM",
       standard: {
-        current: "7.90",
-        original: "7.90",
+        current: "8.90",
+        original: "8.90",
       },
     },
     isDiscount: false,
@@ -700,8 +718,8 @@ export const menus: MenuItem[] = [
     price: {
       currency: "RM",
       standard: {
-        current: "1.00",
-        original: "1.00",
+        current: "1.50",
+        original: "1.50",
       },
     },
     isDiscount: false,
@@ -828,7 +846,7 @@ export const menus: MenuItem[] = [
   },
   {
     id: "beverages-5",
-    name: "Iced Chocolate",
+    name: "Van Houten Iced Chocolate",
     image: "/Images/beverages-5.jpg",
     description: "Rich with creamy chocolate drink, served cold over ice.",
     category: "Beverages",
@@ -894,15 +912,50 @@ export const menus: MenuItem[] = [
   },
   {
     id: "juices-4",
-    name: "Apple + Celery",
+    name: "Asam Boi",
     image: "/Images/juices-4.jpg",
-    description: "Healthy blend of apple and celery juice.",
+    description:
+      "A refreshing sweet and sour drink made with preserved plum (asam boi), served chilled for a tangy and uniquely Malaysian flavor that cools and refreshes every sip.",
     category: "Fresh Fruit Juices",
     price: {
       currency: "RM",
       standard: {
-        current: "9.90",
-        original: "9.90",
+        current: "7.90",
+        original: "7.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "juices-5",
+    name: "Orange + Asam Boi",
+    image: "/Images/juices-5.jpg",
+    description:
+      "A zesty blend of fresh orange and tangy preserved plum (asam boi), served chilled for a vibrant, sweet-and-sour drink that refreshes and energizes with every sip.",
+    category: "Fresh Fruit Juices",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "8.90",
+        original: "8.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "juices-6",
+    name: "Apple + Asam Boi",
+    image: "/Images/juices-6.jpg",
+    description:
+      "A refreshing blend of green apple juice mixed with tangy asam boi, delivering the perfect balance of sweet and sour in every sip.",
+    category: "Fresh Fruit Juices",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "8.90",
+        original: "8.90",
       },
     },
     isDiscount: false,
@@ -1031,7 +1084,7 @@ export const menus: MenuItem[] = [
   },
   {
     id: "frappe-4",
-    name: "Strawberry Creme Brulee",
+    name: "Strawberry Crème Brulee Frappe",
     image: "/Images/frappe-4.jpg",
     description:
       "A creamy ice-blended strawberry frappe with a hint of crème brûlée flavour.",
