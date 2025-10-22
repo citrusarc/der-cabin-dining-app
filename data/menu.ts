@@ -7,7 +7,7 @@ export const menus: MenuItem[] = [
     name: "Australian Lamb Shoulder",
     image: "/Images/specialty-1.jpg",
     description:
-      "Tender, juicy Australian lamb shoulder grilled to perfection served with savoury sauce, creamy mashed potato and mixed vegetables.",
+      "Tender lamb shoulder grilled to perfection, served with your choice of fries & coleslaw or fries & mix vegetables, complemented with our signature black pepper sauce.",
     category: "Today’s Specialty",
     price: {
       currency: "RM",
@@ -88,7 +88,7 @@ export const menus: MenuItem[] = [
     name: "Homemade Mushroom Soup",
     image: "/Images/starters-4.jpg",
     description:
-      "Velvety soup made from fresh mushrooms, simmered with herbs and cream for rich flavor.",
+      "Creamy homemade mushroom soup served with crispy toast bread — warm, rich, and comforting.",
     category: "Starters",
     price: {
       currency: "RM",
@@ -157,7 +157,7 @@ export const menus: MenuItem[] = [
     name: "Mixed Grilled Beef + Grilled Chicken",
     image: "/Images/mixed-grilled-1.jpg",
     description:
-      "Grilled beef and juicy chicken thigh, chargrilled to smoky perfection and served with golden fries, fresh coleslaw, and our classic black pepper sauce.",
+      "Savory juicy beef paired with grilled chicken, served with your choice of fries & coleslaw or fries & mix vegetables, and accompanied by two sauces — black pepper and one of your choice.",
     category: "Mixed Grilled",
     price: {
       currency: "RM",
@@ -174,7 +174,7 @@ export const menus: MenuItem[] = [
     name: "Mixed Grilled Lamb + Grilled Chicken",
     image: "/Images/mixed-grilled-2.jpg",
     description:
-      "A perfect harmony of juicy grilled lamb and tender chicken, flame-grilled to perfection and served with golden fries, fresh coleslaw, and our signature black pepper sauce.",
+      "A perfect duo of juicy grilled lamb and tender chicken, served with your choice of fries & coleslaw or fries & mix vegetables, and paired with two sauces — our signature black pepper sauce and one sauce of your choice.",
     category: "Mixed Grilled",
     price: {
       currency: "RM",
@@ -258,11 +258,11 @@ export const menus: MenuItem[] = [
   // Chicken Feast
   {
     id: "chicken-1",
-    name: "Cabin Chicken Chop (Chicken Breast Part)",
-    label: "(6pcs)",
+    name: "XL Chicken Chop",
+    label: "(3pcs, 220g)",
     image: "/Images/chicken-1.jpg",
     description:
-      "Crispy fried chicken breast part, tender inside — with savoury sauce and served with fries and coleslaw.",
+      "Crispy breaded chicken chop, deep-fried to golden perfection and served with fresh coleslaw, golden fries, and our signature black pepper sauce.",
     category: "Chicken Feast",
     price: {
       currency: "RM",
@@ -280,7 +280,7 @@ export const menus: MenuItem[] = [
     label: "(6pcs, 540g)",
     image: "/Images/chicken-2.jpg",
     description:
-      "Chicken chop fried to crispy perfection with juicy tender meat inside, served in XXL size for a truly satisfying meal.",
+      "Extra-large breaded chicken chop, deep-fried to golden perfection and served with fresh coleslaw, golden fries, and our signature black pepper sauce.",
     category: "Chicken Feast",
     price: {
       currency: "RM",
@@ -294,8 +294,26 @@ export const menus: MenuItem[] = [
   },
   {
     id: "chicken-3",
-    name: "Grilled Chicken Chop (Thigh Part)",
+    name: "Mushroom Chicken Mushroom",
+    label: "(360g)",
     image: "/Images/chicken-3.jpg",
+    description:
+      "Crispy breaded chicken topped with creamy mushroom sauce and melted mozzarella cheese, served with golden fries and fresh coleslaw.",
+    category: "Chicken Feast",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "15.90",
+        original: "15.90",
+      },
+    },
+    isDiscount: false,
+    isBestSeller: false,
+  },
+  {
+    id: "chicken-4",
+    name: "Grilled Chicken Chop (Thigh Part)",
+    image: "/Images/chicken-4.jpg",
     description:
       "Juicy grilled chicken thigh served with savoury sauce, crispy fries, and coleslaw.",
     category: "Chicken Feast",
@@ -310,9 +328,9 @@ export const menus: MenuItem[] = [
     isBestSeller: false,
   },
   {
-    id: "chicken-4",
+    id: "chicken-5",
     name: "Salted Egg Chicken Chop (Thigh Part)",
-    image: "/Images/chicken-4.jpg",
+    image: "/Images/chicken-5.jpg",
     description:
       "Chicken thigh coated with seasoned flour, fried to crispy perfection, served with salted egg sauce, fries and coleslaw.",
     category: "Chicken Feast",
@@ -327,9 +345,9 @@ export const menus: MenuItem[] = [
     isBestSeller: false,
   },
   {
-    id: "chicken-5",
+    id: "chicken-6",
     name: "Cheesy Chicken Ball",
-    image: "/Images/chicken-5.jpg",
+    image: "/Images/chicken-6.jpg",
     description:
       "Crispy on the outside, juicy chicken on the inside, with melted cheese at the center for that perfect bite-sized delight.",
     category: "Chicken Feast",
