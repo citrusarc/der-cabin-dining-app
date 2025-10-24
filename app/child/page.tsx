@@ -8,6 +8,8 @@ import { menus } from "@/data/menu";
 import { MenuCategory, MenuItem } from "@/types";
 import Modal from "@/components/ui/Modal";
 
+const IMAGE_VERSION = new Date().getTime();
+
 export default function ChildHomePage() {
   const categories = [...new Set(menus.map((item) => item.category))];
   const [activeCategory, setActiveCategory] = useState(categories[0]);
@@ -66,7 +68,7 @@ export default function ChildHomePage() {
         <Image
           priority
           fetchPriority="high"
-          src="/Images/brand-logo.png"
+          src={`/Images/brand-logo.png?${IMAGE_VERSION}`}
           alt="Brand Logo"
           height={72}
           width={72}
@@ -146,7 +148,7 @@ export default function ChildHomePage() {
                       fill
                       priority
                       fetchPriority="high"
-                      src={item.image}
+                      src={`${item.image}?${IMAGE_VERSION}`}
                       alt={item.name}
                       className="object-cover object-center"
                     />
@@ -235,7 +237,7 @@ export default function ChildHomePage() {
                 fill
                 priority
                 fetchPriority="high"
-                src={selectedItem.image}
+                src={`${selectedItem.image}?${IMAGE_VERSION}`}
                 alt={selectedItem.name}
                 className="object-cover object-center"
               />
