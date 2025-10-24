@@ -384,7 +384,7 @@ export const menus: MenuItem[] = [
   },
   {
     id: "sea-2",
-    name: "Salmon (150gm)",
+    name: "Salmon (150g)",
     image: "/Images/sea-2.jpg",
     description:
       "Enjoy a 150-gram fillet of fresh  salmon, grilled to perfection with crispy skin and tender, flaky flesh. Served with creamy garlic sauce.",
