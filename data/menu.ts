@@ -22,7 +22,7 @@ export const menus: MenuItem[] = [
   },
   {
     id: "specialty-2",
-    name: "NZ Sirloin Steak (200gm)",
+    name: "NZ Sirloin Steak (200g)",
     image: "/Images/specialty-2.jpg",
     description: `Premium New Zealand sirloin steak, perfectly grilled to your preferred doneness and served with rich black pepper sauce. Accompanied by your choice of side:\n
       - Mashed potato with coleslaw
@@ -138,7 +138,8 @@ export const menus: MenuItem[] = [
   },
   {
     id: "starters-7",
-    name: "Buffalo Chicken Wing (5 pcs)",
+    name: "Buffalo Chicken Wing",
+    label: "(5 pcs)",
     image: "/Images/starters-7.jpg",
     description: "Sweet & spicy chicken wings with creamy garlic sauce.",
     category: "Starters",
@@ -261,7 +262,7 @@ export const menus: MenuItem[] = [
   {
     id: "chicken-1",
     name: "Cabin Chicken Chop (Chicken Breast Part) ",
-    label: "(3pcs, 220g)",
+    label: "(3 pcs)",
     image: "/Images/chicken-1.jpg",
     description:
       "Enjoy 3 pieces of tender chicken breast coated with crispy breadcrumbs and deep-fried to golden perfection. Served with rich black pepper sauce, accompanied by fries and coleslaw for a hearty and satisfying meal.",
@@ -279,7 +280,7 @@ export const menus: MenuItem[] = [
   {
     id: "chicken-2",
     name: "XXL Cabin Chicken Chop",
-    label: "(6pcs, 520g)",
+    label: "(6 pcs)",
     image: "/Images/chicken-2.jpg",
     description:
       "Enjoy 6 pieces of tender chicken breast coated with crispy breadcrumbs and deep-fried to golden perfection. Served with rich black pepper sauce, accompanied by fries and coleslaw for an extra hearty and satisfying meal.",
@@ -727,7 +728,8 @@ export const menus: MenuItem[] = [
   },
   {
     id: "extras-4",
-    name: "Garlic Bread (2 pcs)",
+    name: "Garlic Bread",
+    label: "(2 pcs)",
     image: "/Images/extras-4.jpg",
     description: "Toasted garlic bread slices.",
     category: "Extras",
