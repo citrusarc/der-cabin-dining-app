@@ -577,7 +577,7 @@ export const menus: MenuItem[] = [
     name: "Cheese Burger (Beef)",
     image: "/Images/burgers-1.jpg",
     description:
-      "Juicy beef patty with melted cheese, served in a toasted bun, topped with streaky beef, crunchy pickles and fries.",
+      "A tender beef patty grilled to juicy perfection, topped with melted cheese slice and crispy onion rings for extra crunch and flavor. Served in a soft burger bun with fresh lettuce and tomato, paired with golden fries on the side.",
     category: "Burgers",
     price: {
       currency: "RM",
@@ -594,7 +594,7 @@ export const menus: MenuItem[] = [
     name: "Crispy Chicken Burger",
     image: "/Images/burgers-2.jpg",
     description:
-      "Chicken thigh coated with seasoned flour, fried to crispy perfection, topped with chicken ham served in a toasted bun and fries.",
+      "A juicy chicken thigh coated in golden, crunchy breadcrumbs, deep-fried to perfection, and served in a soft burger bun. Layered with melted cheese sauce, fresh lettuce, and sliced tomato for a rich, savory flavor and satisfying crunch. Served with crispy fries on the side.",
     category: "Burgers",
     price: {
       currency: "RM",
