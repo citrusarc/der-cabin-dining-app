@@ -1292,7 +1292,7 @@ export const menus: MenuItem[] = [
   },
   {
     id: "hot-drinks-5",
-    name: "Hot Chocolate",
+    name: "Van Houten Hot Chocolate",
     image: "/Images/hot-drinks-5.jpg",
     description: "Rich with creamy chocolate drink, served hot and comforting.",
     category: "Hot Drinks",
