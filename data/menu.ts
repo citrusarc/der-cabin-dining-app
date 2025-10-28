@@ -6,9 +6,10 @@ export const menus: MenuItem[] = [
     id: "specialty-1",
     name: "Australian Lamb Shoulder",
     image: "/Images/specialty-1.jpg",
-    description: `Enjoy 2 pieces of premium Australian lamb shoulder, weighing between 280–300 grams in total. Expertly grilled to tender perfection, offering a juicy and flavorful bite in every piece. Served with rich black pepper sauce and your choice of side:\n
-      - Fries with coleslaw
-      - Fries with mixed vegetables`,
+    description: `Enjoy two pieces of premium Australian lamb shoulder (total weight 280–300g), expertly grilled to tender perfection for a juicy, flavorful bite in every piece. Served with rich black pepper sauce and your choice of side:\n
+      1) Fries & Coleslaw
+      or
+      2) Mashed Potatoes & Mixed Vegetables`,
     category: "Today’s Specialty",
     price: {
       currency: "RM",
@@ -262,10 +263,10 @@ export const menus: MenuItem[] = [
   {
     id: "chicken-1",
     name: "Cabin Chicken Chop (Chicken Breast Part) ",
-    label: "(3 pcs)",
+    label: "(4 pcs)",
     image: "/Images/chicken-1.jpg",
     description:
-      "Enjoy 3 pieces of tender chicken breast coated with crispy breadcrumbs and deep-fried to golden perfection. Served with rich black pepper sauce, accompanied by fries and coleslaw for a hearty and satisfying meal.",
+      "Enjoy 4 pieces of tender chicken breast coated with crispy breadcrumbs and deep-fried to golden perfection. Served with rich black pepper sauce, accompanied by fries and coleslaw for a hearty and satisfying meal.",
     category: "Chicken Feast",
     price: {
       currency: "RM",
@@ -277,24 +278,24 @@ export const menus: MenuItem[] = [
     isDiscount: false,
     isBestSeller: false,
   },
-  {
-    id: "chicken-2",
-    name: "XXL Cabin Chicken Chop",
-    label: "(6 pcs)",
-    image: "/Images/chicken-2.jpg",
-    description:
-      "Enjoy 6 pieces of tender chicken breast coated with crispy breadcrumbs and deep-fried to golden perfection. Served with rich black pepper sauce, accompanied by fries and coleslaw for an extra hearty and satisfying meal.",
-    category: "Chicken Feast",
-    price: {
-      currency: "RM",
-      standard: {
-        current: "16.90",
-        original: "16.90",
-      },
-    },
-    isDiscount: false,
-    isBestSeller: false,
-  },
+  // {
+  //   id: "chicken-2",
+  //   name: "XXL Cabin Chicken Chop",
+  //   label: "(6 pcs)",
+  //   image: "/Images/chicken-2.jpg",
+  //   description:
+  //     "Enjoy 6 pieces of tender chicken breast coated with crispy breadcrumbs and deep-fried to golden perfection. Served with rich black pepper sauce, accompanied by fries and coleslaw for an extra hearty and satisfying meal.",
+  //   category: "Chicken Feast",
+  //   price: {
+  //     currency: "RM",
+  //     standard: {
+  //       current: "16.90",
+  //       original: "16.90",
+  //     },
+  //   },
+  //   isDiscount: false,
+  //   isBestSeller: false,
+  // },
   {
     id: "chicken-3",
     name: "Mushroom Chicken Mushroom",
