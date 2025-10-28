@@ -26,8 +26,9 @@ export const menus: MenuItem[] = [
     name: "NZ Sirloin Steak (200g)",
     image: "/Images/specialty-2.jpg",
     description: `Premium New Zealand sirloin steak, perfectly grilled to your preferred doneness and served with rich black pepper sauce. Accompanied by your choice of side:\n
-      - Mashed potato with coleslaw
-      - Mashed potato with mixed vegetables`,
+      1) Mashed potato with coleslaw
+      or
+      2) Mashed potato with mixed vegetables`,
     category: "Today’s Specialty",
     price: {
       currency: "RM",
