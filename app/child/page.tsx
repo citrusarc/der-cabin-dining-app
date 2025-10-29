@@ -111,7 +111,7 @@ export default function ChildHomePage() {
             onClick={() => {
               handleScrollToCategory(category);
             }}
-            className={`transition text-left ${
+            className={`transition text-left cursor-pointer ${
               activeCategory === category ? "text-yellow-500" : "text-zinc-400"
             }`}
           >
