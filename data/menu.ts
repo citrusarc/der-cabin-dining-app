@@ -1,4 +1,12 @@
-import { MenuItem } from "@/types";
+import { MenuItem, ItemStatus } from "@/types";
+
+const defaultStatus: ItemStatus = {
+  isDisabled: false,
+  isHidden: false,
+  isComingSoon: false,
+  isPromo: false,
+  isBestSeller: false,
+};
 
 export const menus: MenuItem[] = [
   // Today’s Specialty
@@ -18,8 +26,7 @@ export const menus: MenuItem[] = [
         original: "29.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
+    status: { ...defaultStatus },
   },
   {
     id: "specialty-2",
@@ -37,8 +44,7 @@ export const menus: MenuItem[] = [
         original: "34.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
+    status: { ...defaultStatus },
   },
 
   // Starters
@@ -50,8 +56,7 @@ export const menus: MenuItem[] = [
       "Crispy golden potato fries, lightly salted for the perfect crunch with every bite.",
     category: "Starters",
     price: { currency: "RM", standard: { current: "7.90", original: "7.90" } },
-    isDiscount: false,
-    isBestSeller: false,
+    status: { ...defaultStatus },
   },
   {
     id: "starters-2",
@@ -67,8 +72,7 @@ export const menus: MenuItem[] = [
         original: "8.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
+    status: { ...defaultStatus },
   },
   {
     id: "starters-3",
@@ -84,8 +88,7 @@ export const menus: MenuItem[] = [
         original: "7.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
+    status: { ...defaultStatus },
   },
   {
     id: "starters-4",
@@ -101,8 +104,7 @@ export const menus: MenuItem[] = [
         original: "8.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
+    status: { ...defaultStatus },
   },
   {
     id: "starters-5",
@@ -118,8 +120,7 @@ export const menus: MenuItem[] = [
         original: "10.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
+    status: { ...defaultStatus },
   },
   {
     id: "starters-6",
@@ -135,8 +136,7 @@ export const menus: MenuItem[] = [
         original: "14.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
+    status: { ...defaultStatus },
   },
   {
     id: "starters-7",
@@ -152,8 +152,7 @@ export const menus: MenuItem[] = [
         original: "19.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
+    status: { ...defaultStatus },
   },
 
   // Mixed Grilled
@@ -171,8 +170,7 @@ export const menus: MenuItem[] = [
         original: "39.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
+    status: { ...defaultStatus },
   },
   {
     id: "mixed-grilled-2",
@@ -188,77 +186,72 @@ export const menus: MenuItem[] = [
         original: "44.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
+    status: { ...defaultStatus },
   },
-  // {
-  //   id: "mixed-grilled-3",
-  //   name: "Mixed Grilled Lamb + Grilled Beef",
-  //   image: "/Images/mixed-grilled-3.jpg",
-  //   description:
-  //     "A bold and flavorful duo of tender grilled lamb and juicy beef, served with golden fries, fresh coleslaw, and our rich black pepper sauce for the ultimate grill experience.",
-  //   category: "Mixed Grilled",
-  //   price: {
-  //     currency: "RM",
-  //     standard: {
-  //       current: "99.99",
-  //       original: "99.99",
-  //     },
-  //   },
-  //   isDiscount: false,
-  //   isBestSeller: false,
-  // },
-  // {
-  //   id: "mixed-grilled-4",
-  //   name: "Mixed Grilled Lamb + Grilled Salmon",
-  //   image: "/Images/mixed-grilled-4.jpg",
-  //   description:
-  //     "A luxurious pairing of juicy grilled lamb and tender salmon, served with golden fries, crisp coleslaw, and our signature creamy garlic sauce — indulgence in every bite.",
-  //   category: "Mixed Grilled",
-  //   price: {
-  //     currency: "RM",
-  //     standard: {
-  //       current: "99.99",
-  //       original: "99.99",
-  //     },
-  //   },
-  //   isDiscount: false,
-  //   isBestSeller: false,
-  // },
-  // {
-  //   id: "mixed-grilled-5",
-  //   name: "Mixed Grilled Salmon + Grilled Chicken",
-  //   image: "/Images/mixed-grilled-5.jpg",
-  //   description:
-  //     "Delicate grilled salmon paired with tender chicken, served hot with golden fries, crisp coleslaw, and our creamy garlic sauce — a delightful balance of flavor and freshness.",
-  //   category: "Mixed Grilled",
-  //   price: {
-  //     currency: "RM",
-  //     standard: {
-  //       current: "99.99",
-  //       original: "99.99",
-  //     },
-  //   },
-  //   isDiscount: false,
-  //   isBestSeller: false,
-  // },
-  // {
-  //   id: "mixed-grilled-6",
-  //   name: "Mixed Grilled Salmon + Grilled Beef",
-  //   image: "/Images/mixed-grilled-6.jpg",
-  //   description:
-  //     "A refined blend of tender grilled salmon and juicy beef, served with golden fries, fresh coleslaw, and our signature creamy garlic sauce — a true taste of indulgence.",
-  //   category: "Mixed Grilled",
-  //   price: {
-  //     currency: "RM",
-  //     standard: {
-  //       current: "99.99",
-  //       original: "99.99",
-  //     },
-  //   },
-  //   isDiscount: false,
-  //   isBestSeller: false,
-  // },
+  {
+    id: "mixed-grilled-3",
+    name: "Mixed Grilled Lamb + Grilled Beef",
+    image: "/Images/mixed-grilled-3.jpg",
+    description:
+      "A bold and flavorful duo of tender grilled lamb and juicy beef, served with golden fries, fresh coleslaw, and our rich black pepper sauce for the ultimate grill experience.",
+    category: "Mixed Grilled",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "99.99",
+        original: "99.99",
+      },
+    },
+    status: { isHidden: true },
+  },
+  {
+    id: "mixed-grilled-4",
+    name: "Mixed Grilled Lamb + Grilled Salmon",
+    image: "/Images/mixed-grilled-4.jpg",
+    description:
+      "A luxurious pairing of juicy grilled lamb and tender salmon, served with golden fries, crisp coleslaw, and our signature creamy garlic sauce — indulgence in every bite.",
+    category: "Mixed Grilled",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "99.99",
+        original: "99.99",
+      },
+    },
+    status: { isHidden: true },
+  },
+  {
+    id: "mixed-grilled-5",
+    name: "Mixed Grilled Salmon + Grilled Chicken",
+    image: "/Images/mixed-grilled-5.jpg",
+    description:
+      "Delicate grilled salmon paired with tender chicken, served hot with golden fries, crisp coleslaw, and our creamy garlic sauce — a delightful balance of flavor and freshness.",
+    category: "Mixed Grilled",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "99.99",
+        original: "99.99",
+      },
+    },
+    status: { isHidden: true },
+  },
+  {
+    id: "mixed-grilled-6",
+    name: "Mixed Grilled Salmon + Grilled Beef",
+    image: "/Images/mixed-grilled-6.jpg",
+    description:
+      "A refined blend of tender grilled salmon and juicy beef, served with golden fries, fresh coleslaw, and our signature creamy garlic sauce — a true taste of indulgence.",
+    category: "Mixed Grilled",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "99.99",
+        original: "99.99",
+      },
+    },
+    status: { isHidden: true },
+  },
 
   // Chicken Feast
   {
@@ -276,27 +269,24 @@ export const menus: MenuItem[] = [
         original: "10.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
-  // {
-  //   id: "chicken-2",
-  //   name: "XXL Cabin Chicken Chop",
-  //   label: "(6 pcs)",
-  //   image: "/Images/chicken-2.jpg",
-  //   description:
-  //     "Enjoy 6 pieces of tender chicken breast coated with crispy breadcrumbs and deep-fried to golden perfection. Served with rich black pepper sauce, accompanied by fries and coleslaw for an extra hearty and satisfying meal.",
-  //   category: "Chicken Feast",
-  //   price: {
-  //     currency: "RM",
-  //     standard: {
-  //       current: "16.90",
-  //       original: "16.90",
-  //     },
-  //   },
-  //   isDiscount: false,
-  //   isBestSeller: false,
-  // },
+  {
+    id: "chicken-2",
+    name: "XXL Cabin Chicken Chop",
+    label: "(6 pcs)",
+    image: "/Images/chicken-2.jpg",
+    description:
+      "Enjoy 6 pieces of tender chicken breast coated with crispy breadcrumbs and deep-fried to golden perfection. Served with rich black pepper sauce, accompanied by fries and coleslaw for an extra hearty and satisfying meal.",
+    category: "Chicken Feast",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "16.90",
+        original: "16.90",
+      },
+    },
+    status: { isHidden: true },
+  },
   {
     id: "chicken-3",
     name: "Mushroom Chicken Mushroom",
@@ -311,8 +301,6 @@ export const menus: MenuItem[] = [
         original: "14.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "chicken-4",
@@ -328,8 +316,6 @@ export const menus: MenuItem[] = [
         original: "15.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "chicken-5",
@@ -345,8 +331,6 @@ export const menus: MenuItem[] = [
         original: "17.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "chicken-6",
@@ -362,8 +346,6 @@ export const menus: MenuItem[] = [
         original: "13.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 
   // From The Sea
@@ -381,8 +363,6 @@ export const menus: MenuItem[] = [
         original: "16.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "sea-2",
@@ -398,8 +378,6 @@ export const menus: MenuItem[] = [
         original: "29.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 
   // Pasta
@@ -417,8 +395,6 @@ export const menus: MenuItem[] = [
         original: "15.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "pasta-2",
@@ -434,8 +410,6 @@ export const menus: MenuItem[] = [
         original: "19.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "pasta-3",
@@ -451,8 +425,6 @@ export const menus: MenuItem[] = [
         original: "22.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "pasta-4",
@@ -468,8 +440,6 @@ export const menus: MenuItem[] = [
         original: "19.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "pasta-5",
@@ -485,8 +455,6 @@ export const menus: MenuItem[] = [
         original: "19.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "pasta-6",
@@ -502,8 +470,6 @@ export const menus: MenuItem[] = [
         original: "19.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "pasta-7",
@@ -519,8 +485,6 @@ export const menus: MenuItem[] = [
         original: "19.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "pasta-8",
@@ -535,8 +499,6 @@ export const menus: MenuItem[] = [
         original: "18.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "pasta-9",
@@ -552,8 +514,6 @@ export const menus: MenuItem[] = [
         original: "19.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "pasta-10",
@@ -569,8 +529,6 @@ export const menus: MenuItem[] = [
         original: "19.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 
   // Burgers
@@ -588,8 +546,6 @@ export const menus: MenuItem[] = [
         original: "19.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "burgers-2",
@@ -605,8 +561,6 @@ export const menus: MenuItem[] = [
         original: "19.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "burgers-3",
@@ -622,8 +576,6 @@ export const menus: MenuItem[] = [
         original: "19.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 
   // For Kiddies
@@ -641,26 +593,23 @@ export const menus: MenuItem[] = [
         original: "7.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
-  // {
-  //   id: "kids-2",
-  //   name: "Kid’s Fish & Fries",
-  //   image: "/Images/kids-2.jpg",
-  //   description:
-  //     "Crispy fried fish fillet served with golden fries — simple and tasty for kids.",
-  //   category: "For Kiddies",
-  //   price: {
-  //     currency: "RM",
-  //     standard: {
-  //       current: "7.90",
-  //       original: "7.90",
-  //     },
-  //   },
-  //   isDiscount: false,
-  //   isBestSeller: false,
-  // },
+  {
+    id: "kids-2",
+    name: "Kid’s Fish & Fries",
+    image: "/Images/kids-2.jpg",
+    description:
+      "Crispy fried fish fillet served with golden fries — simple and tasty for kids.",
+    category: "For Kiddies",
+    price: {
+      currency: "RM",
+      standard: {
+        current: "7.90",
+        original: "7.90",
+      },
+    },
+    status: { isHidden: true },
+  },
   {
     id: "kids-3",
     name: "Kid’s Alfredo Pasta",
@@ -675,8 +624,6 @@ export const menus: MenuItem[] = [
         original: "8.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 
   // Extras
@@ -693,8 +640,6 @@ export const menus: MenuItem[] = [
         original: "1.00",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "extras-2",
@@ -709,8 +654,6 @@ export const menus: MenuItem[] = [
         original: "1.00",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "extras-3",
@@ -725,8 +668,6 @@ export const menus: MenuItem[] = [
         original: "1.50",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "extras-4",
@@ -742,8 +683,6 @@ export const menus: MenuItem[] = [
         original: "3.00",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 
   // Desserts
@@ -761,8 +700,6 @@ export const menus: MenuItem[] = [
         original: "8.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "desserts-2",
@@ -778,8 +715,6 @@ export const menus: MenuItem[] = [
         original: "10.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 
   // Beverages
@@ -796,8 +731,6 @@ export const menus: MenuItem[] = [
         original: "4.50",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "beverages-2",
@@ -812,8 +745,6 @@ export const menus: MenuItem[] = [
         original: "4.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "beverages-3",
@@ -828,8 +759,6 @@ export const menus: MenuItem[] = [
         original: "5.50",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "beverages-4",
@@ -845,8 +774,6 @@ export const menus: MenuItem[] = [
         original: "5.50",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "beverages-5",
@@ -861,8 +788,6 @@ export const menus: MenuItem[] = [
         original: "7.50",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 
   // Fresh Fruit Juices
@@ -879,8 +804,6 @@ export const menus: MenuItem[] = [
         original: "7.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "juices-2",
@@ -895,8 +818,6 @@ export const menus: MenuItem[] = [
         original: "7.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "juices-3",
@@ -911,8 +832,6 @@ export const menus: MenuItem[] = [
         original: "7.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "juices-4",
@@ -928,8 +847,6 @@ export const menus: MenuItem[] = [
         original: "7.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "juices-5",
@@ -945,8 +862,6 @@ export const menus: MenuItem[] = [
         original: "8.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "juices-6",
@@ -962,8 +877,6 @@ export const menus: MenuItem[] = [
         original: "8.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 
   // Sparkling Drinks
@@ -981,8 +894,6 @@ export const menus: MenuItem[] = [
         original: "4.50",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "sparkling-2",
@@ -998,8 +909,6 @@ export const menus: MenuItem[] = [
         original: "5.50",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "sparkling-3",
@@ -1014,8 +923,6 @@ export const menus: MenuItem[] = [
         original: "5.50",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "sparkling-4",
@@ -1031,8 +938,6 @@ export const menus: MenuItem[] = [
         original: "8.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 
   // Frappe
@@ -1049,8 +954,6 @@ export const menus: MenuItem[] = [
         original: "9.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "frappe-2",
@@ -1066,8 +969,6 @@ export const menus: MenuItem[] = [
         original: "11.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "frappe-3",
@@ -1083,8 +984,6 @@ export const menus: MenuItem[] = [
         original: "11.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "frappe-4",
@@ -1100,8 +999,6 @@ export const menus: MenuItem[] = [
         original: "12.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 
   // Buttercream Series
@@ -1118,8 +1015,6 @@ export const menus: MenuItem[] = [
         original: "9.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "buttercream-2",
@@ -1135,8 +1030,6 @@ export const menus: MenuItem[] = [
         original: "9.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "buttercream-3",
@@ -1152,8 +1045,6 @@ export const menus: MenuItem[] = [
         original: "9.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 
   // Coffee (Hot)
@@ -1170,8 +1061,6 @@ export const menus: MenuItem[] = [
         original: "5.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "coffee-hot-2",
@@ -1187,8 +1076,6 @@ export const menus: MenuItem[] = [
         original: "7.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 
   // Coffee (Cold)
@@ -1205,8 +1092,6 @@ export const menus: MenuItem[] = [
         original: "8.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "coffee-cold-2",
@@ -1222,8 +1107,6 @@ export const menus: MenuItem[] = [
         original: "9.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 
   // Hot Drinks
@@ -1240,8 +1123,6 @@ export const menus: MenuItem[] = [
         original: "3.50",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "hot-drinks-2",
@@ -1256,8 +1137,6 @@ export const menus: MenuItem[] = [
         original: "4.50",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "hot-drinks-3",
@@ -1272,8 +1151,6 @@ export const menus: MenuItem[] = [
         original: "4.50",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "hot-drinks-4",
@@ -1289,8 +1166,6 @@ export const menus: MenuItem[] = [
         original: "4.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
   {
     id: "hot-drinks-5",
@@ -1305,7 +1180,5 @@ export const menus: MenuItem[] = [
         original: "7.90",
       },
     },
-    isDiscount: false,
-    isBestSeller: false,
   },
 ];

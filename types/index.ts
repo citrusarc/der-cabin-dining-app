@@ -1,3 +1,11 @@
+export type ItemStatus = {
+  isDisabled?: boolean;
+  isHidden?: boolean;
+  isComingSoon?: boolean;
+  isPromo?: boolean;
+  isBestSeller?: boolean;
+};
+
 export type MenuCategory =
   | "Today’s Specialty"
   | "Starters"
@@ -37,6 +45,5 @@ export interface MenuItem {
   description?: string;
   category: MenuCategory;
   price: MenuPrice;
-  isDiscount: boolean;
-  isBestSeller: boolean;
+  status?: ItemStatus;
 }

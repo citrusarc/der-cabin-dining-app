@@ -8,10 +8,11 @@ import { menus } from "@/data/menu";
 import { MenuCategory, MenuItem } from "@/types";
 import Modal from "@/components/ui/Modal";
 
-const IMAGE_VERSION = new Date().getTime();
+const IMAGE_VERSION = process.env.NEXT_PUBLIC_BUILD_ID || "v1";
 
 export default function ChildHomePage() {
-  const categories = [...new Set(menus.map((item) => item.category))];
+  const menu = menus.filter((item) => !item.status?.isHidden);
+  const categories = [...new Set(menu.map((item) => item.category))];
   const [activeCategory, setActiveCategory] = useState(categories[0]);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
@@ -127,104 +128,116 @@ export default function ChildHomePage() {
         >
           <h2 className="text-xl font-medium text-zinc-400">{category}</h2>
           <div className="flex flex-col gap-4">
-            {menus
+            {menu
               .filter((item) => item.category === category)
-              .map((item) => (
-                <div
-                  key={item.id}
-                  className="relative flex flex-row gap-4 p-4 items-start rounded-2xl overflow-hidden bg-zinc-800"
-                  onClick={() => {
-                    setSelectedItem(item);
-                    setIsOpen(true);
-                  }}
-                >
-                  {item.isDiscount && (
-                    <p className="absolute top-2 left-0 z-10 px-1 py-0.5 rounded-tr-sm rounded-br-sm text-sm text-white bg-red-500">
-                      Discount Off %
-                    </p>
-                  )}
-                  <div className="relative w-24 h-24 aspect-square rounded-xl overflow-hidden flex-shrink-0">
-                    <Image
-                      fill
-                      priority
-                      fetchPriority="high"
-                      src={`${item.image}?${IMAGE_VERSION}`}
-                      alt={item.name}
-                      className="object-cover object-center"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <div>
-                      <h2 className="flex items-center gap-2 text-md sm:text-lg font-semibold text-white">
-                        {item.name}
-                        {item.isBestSeller && (
-                          <span>
-                            <ThumbsUp className="w-4 h-4 text-yellow-500" />
-                          </span>
-                        )}
-                      </h2>
-                      <p className="whitespace-pre-line text-sm text-zinc-400">
-                        {item.description}
+              .map((item) => {
+                const status = item.status || {};
+                const disabled = status.isDisabled || status.isComingSoon;
+                return (
+                  <div
+                    key={item.id}
+                    className={`relative flex flex-row gap-4 p-4 items-start rounded-2xl overflow-hidden bg-zinc-800 ${
+                      disabled ? "opacity-50" : "cursor-pointer"
+                    }`}
+                    onClick={() => {
+                      if (!disabled) {
+                        setSelectedItem(item);
+                        setIsOpen(true);
+                      }
+                    }}
+                  >
+                    {status.isPromo && (
+                      <p className="absolute top-2 left-0 z-10 px-1 py-0.5 rounded-tr-sm rounded-br-sm text-sm text-white bg-red-500">
+                        Discount Off %
                       </p>
+                    )}
+
+                    {status.isComingSoon && (
+                      <p className="absolute top-2 right-0 z-10 px-1 py-0.5 rounded-tl-sm rounded-bl-sm text-sm text-white bg-yellow-600">
+                        Coming Soon
+                      </p>
+                    )}
+                    <div className="relative w-24 h-24 aspect-square rounded-xl overflow-hidden flex-shrink-0">
+                      <Image
+                        fill
+                        priority
+                        fetchPriority="high"
+                        src={`${item.image}?${IMAGE_VERSION}`}
+                        alt={item.name}
+                        className="object-cover object-center"
+                      />
                     </div>
-                    <div className="flex flex-row gap-4">
-                      {item.price.standard && (
-                        <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
-                          {item.price.currency}
-                          {item.price.standard.current}
-                          <div className="flex items-center gap-2 text-sm text-zinc-400">
-                            {item.label}
-                          </div>
-                          {item.isDiscount && (
-                            <div className="flex items-center gap-2 text-sm ">
-                              <span className="line-through text-zinc-600">
-                                {item.price.currency}
-                                {item.price.standard.original}
-                              </span>
-                            </div>
+                    <div className="flex flex-col gap-2">
+                      <div>
+                        <h2 className="flex items-center gap-2 text-md sm:text-lg font-semibold text-white">
+                          {item.name}
+                          {status.isBestSeller && (
+                            <ThumbsUp className="w-4 h-4 text-yellow-500" />
                           )}
-                        </div>
-                      )}
-
-                      {item.price.hot && (
-                        <div>
-                          <div className="text-sm text-zinc-600">Hot</div>
+                        </h2>
+                        <p className="whitespace-pre-line text-sm text-zinc-400">
+                          {item.description}
+                        </p>
+                      </div>
+                      <div className="flex flex-row gap-4">
+                        {item.price.standard && (
                           <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
                             {item.price.currency}
-                            {item.price.hot.current}
-                            {item.isDiscount && (
+                            {item.price.standard.current}
+                            <div className="flex items-center gap-2 text-sm text-zinc-400">
+                              {item.label}
+                            </div>
+                            {status.isPromo && (
                               <div className="flex items-center gap-2 text-sm ">
                                 <span className="line-through text-zinc-600">
                                   {item.price.currency}
-                                  {item.price.hot.original}
+                                  {item.price.standard.original}
                                 </span>
                               </div>
                             )}
                           </div>
-                        </div>
-                      )}
+                        )}
 
-                      {item.price.cold && (
-                        <div>
-                          <div className="text-sm text-zinc-600">Cold</div>
-                          <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
-                            {item.price.currency}
-                            {item.price.cold.current}
-                            {item.isDiscount && (
-                              <div className="flex items-center gap-2 text-sm ">
-                                <span className="line-through text-zinc-600">
-                                  {item.price.currency}
-                                  {item.price.cold.original}
-                                </span>
-                              </div>
-                            )}
+                        {item.price.hot && (
+                          <div>
+                            <div className="text-sm text-zinc-600">Hot</div>
+                            <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
+                              {item.price.currency}
+                              {item.price.hot.current}
+                              {status.isPromo && (
+                                <div className="flex items-center gap-2 text-sm ">
+                                  <span className="line-through text-zinc-600">
+                                    {item.price.currency}
+                                    {item.price.hot.original}
+                                  </span>
+                                </div>
+                              )}
+                            </div>
                           </div>
-                        </div>
-                      )}
+                        )}
+
+                        {item.price.cold && (
+                          <div>
+                            <div className="text-sm text-zinc-600">Cold</div>
+                            <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
+                              {item.price.currency}
+                              {item.price.cold.current}
+                              {status.isPromo && (
+                                <div className="flex items-center gap-2 text-sm ">
+                                  <span className="line-through text-zinc-600">
+                                    {item.price.currency}
+                                    {item.price.cold.original}
+                                  </span>
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
           </div>
         </section>
       ))}
@@ -246,7 +259,7 @@ export default function ChildHomePage() {
               <div>
                 <h2 className="flex items-center gap-2 text-md sm:text-lg font-semibold text-white">
                   {selectedItem.name}
-                  {selectedItem.isBestSeller && (
+                  {selectedItem.status?.isBestSeller && (
                     <span>
                       <ThumbsUp className="w-4 h-4 text-yellow-500" />
                     </span>
@@ -256,7 +269,7 @@ export default function ChildHomePage() {
                   {selectedItem.description}
                 </p>
               </div>
-              {selectedItem.isDiscount && (
+              {selectedItem.status?.isPromo && (
                 <p className="w-fit px-1 py-0.5 rounded-sm text-sm text-white bg-red-500">
                   Discount Off %
                 </p>
@@ -270,7 +283,7 @@ export default function ChildHomePage() {
                     <div className="flex items-center gap-2 text-sm text-zinc-400">
                       {selectedItem.label}
                     </div>
-                    {selectedItem.isDiscount && (
+                    {selectedItem.status?.isPromo && (
                       <div className="flex items-center gap-2 text-sm ">
                         <span className="line-through text-zinc-600">
                           {selectedItem.price.currency}
@@ -287,7 +300,7 @@ export default function ChildHomePage() {
                     <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
                       {selectedItem.price.currency}
                       {selectedItem.price.hot.current}
-                      {selectedItem.isDiscount && (
+                      {selectedItem.status?.isPromo && (
                         <div className="flex items-center gap-2 text-sm ">
                           <span className="line-through text-zinc-600">
                             {selectedItem.price.currency}
@@ -305,7 +318,7 @@ export default function ChildHomePage() {
                     <div className="flex items-center gap-2 text-lg font-medium text-yellow-500">
                       {selectedItem.price.currency}
                       {selectedItem.price.cold.current}
-                      {selectedItem.isDiscount && (
+                      {selectedItem.status?.isPromo && (
                         <div className="flex items-center gap-2 text-sm ">
                           <span className="line-through text-zinc-600">
                             {selectedItem.price.currency}
