@@ -93,6 +93,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <Script
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-GNCGTWT87Q"
           strategy="afterInteractive"
         />
@@ -109,64 +110,63 @@ export default function RootLayout({
           id="ldjson-restaurant"
           type="application/ld+json"
           strategy="afterInteractive"
-        >
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Restaurant",
-            name: "Der' Cabin Bistro",
-            image: "https://www.dercabinbistro.com/Images/banner.png",
-            url: "https://www.dercabinbistro.com/",
-            telephone: "+60177056254",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress:
-                "Ptd 174172, Plot L3 & L4, Gravity Green, Bandar Seri Alam",
-              addressLocality: "Masai",
-              postalCode: "81750",
-              addressRegion: "Johor",
-              addressCountry: {
-                "@type": "Country",
-                name: "MY",
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Restaurant",
+              name: "Der' Cabin Bistro",
+              image: "https://www.dercabinbistro.com/Images/banner.png",
+              url: "https://www.dercabinbistro.com/",
+              telephone: "+60177056254",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress:
+                  "Ptd 174172, Plot L3 & L4, Gravity Green, Bandar Seri Alam",
+                addressLocality: "Masai",
+                postalCode: "81750",
+                addressRegion: "Johor",
+                addressCountry: "MY",
               },
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 1.4958884503863925,
-              longitude: 103.87280720225242,
-            },
-            openingHoursSpecification: [
-              {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                  "Sunday",
-                ],
-                opens: "17:00",
-                closes: "00:00",
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 1.4958884503863925,
+                longitude: 103.87280720225242,
               },
-            ],
-            servesCuisine: [
-              "Western",
-              "Asian Fusion",
-              "Bistro Food",
-              "Comfort Food",
-              "Beverages",
-            ],
-            priceRange: "RM",
-            sameAs: [
-              "https://www.instagram.com/dercabinbistro/",
-              "https://www.facebook.com/dercabinbistro",
-              "https://www.tiktok.com/@dercabinbistro",
-            ],
-          })}
-        </Script>
+              openingHoursSpecification: [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday",
+                  ],
+                  opens: "17:00",
+                  closes: "00:00",
+                },
+              ],
+              servesCuisine: [
+                "Western",
+                "Asian Fusion",
+                "Bistro Food",
+                "Comfort Food",
+                "Beverages",
+              ],
+              priceRange: "RM",
+              sameAs: [
+                "https://www.instagram.com/dercabinbistro/",
+                "https://www.facebook.com/dercabinbistro",
+                "https://www.tiktok.com/@dercabinbistro",
+              ],
+            }),
+          }}
+        />
       </head>
       <body
+        suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
