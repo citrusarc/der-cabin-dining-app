@@ -1181,4 +1181,4 @@ export const menus: MenuItem[] = [
       },
     },
   },
-];
+] satisfies MenuItem[];
